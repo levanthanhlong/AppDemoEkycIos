@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		12782EE12EF531BB0089E748 /* CmcEkycSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12782EDA2EF52D520089E748 /* CmcEkycSDK.xcframework */; };
+		12782EE22EF531BB0089E748 /* CmcEkycSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12782EDA2EF52D520089E748 /* CmcEkycSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1286A9CE2EF2BAC2008F7539 /* KalapaSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1286A9CD2EF2BAC2008F7539 /* KalapaSDK.xcframework */; };
+		1286A9CF2EF2BAC2008F7539 /* KalapaSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1286A9CD2EF2BAC2008F7539 /* KalapaSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1286A9D42EF2BDC3008F7539 /* iProov.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1286A9D32EF2BDC3008F7539 /* iProov.xcframework */; };
+		1286A9D52EF2BDC3008F7539 /* iProov.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1286A9D32EF2BDC3008F7539 /* iProov.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1286A98C2EF25E0F008F7539 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,15 +32,47 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1286A9D02EF2BAC2008F7539 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1286A9D52EF2BDC3008F7539 /* iProov.xcframework in Embed Frameworks */,
+				12782EE22EF531BB0089E748 /* CmcEkycSDK.xcframework in Embed Frameworks */,
+				1286A9CF2EF2BAC2008F7539 /* KalapaSDK.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		1286A97B2EF25E0E008F7539 /* HelloSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12782EDA2EF52D520089E748 /* CmcEkycSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CmcEkycSDK.xcframework; path = "../../../SDK-wrapper-new/ios/swift/CmcEkycSDK/build/CmcEkycSDK.xcframework"; sourceTree = "<group>"; };
+		1286A97B2EF25E0E008F7539 /* EkycDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EkycDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1286A98B2EF25E0F008F7539 /* HelloSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1286A9952EF25E0F008F7539 /* HelloSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1286A9CD2EF2BAC2008F7539 /* KalapaSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KalapaSDK.xcframework; path = ../../../../newSDKKALAPA/KalapaSDK.xcframework; sourceTree = "<group>"; };
+		1286A9D32EF2BDC3008F7539 /* iProov.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:622Y49N79Q:iProov Limited"; lastKnownFileType = wrapper.xcframework; name = iProov.xcframework; path = ../../../../importSDKIOS/SDK/iProov.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		12BA44D92EF3B7110037CED0 /* Exceptions for "HelloSwiftUI" folder in "EkycDemo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1286A97A2EF25E0E008F7539 /* EkycDemo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1286A97D2EF25E0E008F7539 /* HelloSwiftUI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				12BA44D92EF3B7110037CED0 /* Exceptions for "HelloSwiftUI" folder in "EkycDemo" target */,
+			);
 			path = HelloSwiftUI;
 			sourceTree = "<group>";
 		};
@@ -52,6 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1286A9D42EF2BDC3008F7539 /* iProov.xcframework in Frameworks */,
+				12782EE12EF531BB0089E748 /* CmcEkycSDK.xcframework in Frameworks */,
+				1286A9CE2EF2BAC2008F7539 /* KalapaSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +122,7 @@
 				1286A97D2EF25E0E008F7539 /* HelloSwiftUI */,
 				1286A98E2EF25E0F008F7539 /* HelloSwiftUITests */,
 				1286A9982EF25E0F008F7539 /* HelloSwiftUIUITests */,
+				1286A9CC2EF2BAC2008F7539 /* Frameworks */,
 				1286A97C2EF25E0E008F7539 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,23 +130,34 @@
 		1286A97C2EF25E0E008F7539 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1286A97B2EF25E0E008F7539 /* HelloSwiftUI.app */,
+				1286A97B2EF25E0E008F7539 /* EkycDemo.app */,
 				1286A98B2EF25E0F008F7539 /* HelloSwiftUITests.xctest */,
 				1286A9952EF25E0F008F7539 /* HelloSwiftUIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1286A9CC2EF2BAC2008F7539 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12782EDA2EF52D520089E748 /* CmcEkycSDK.xcframework */,
+				1286A9D32EF2BDC3008F7539 /* iProov.xcframework */,
+				1286A9CD2EF2BAC2008F7539 /* KalapaSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1286A97A2EF25E0E008F7539 /* HelloSwiftUI */ = {
+		1286A97A2EF25E0E008F7539 /* EkycDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1286A99F2EF25E0F008F7539 /* Build configuration list for PBXNativeTarget "HelloSwiftUI" */;
+			buildConfigurationList = 1286A99F2EF25E0F008F7539 /* Build configuration list for PBXNativeTarget "EkycDemo" */;
 			buildPhases = (
 				1286A9772EF25E0E008F7539 /* Sources */,
 				1286A9782EF25E0E008F7539 /* Frameworks */,
 				1286A9792EF25E0E008F7539 /* Resources */,
+				1286A9D02EF2BAC2008F7539 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -110,11 +166,11 @@
 			fileSystemSynchronizedGroups = (
 				1286A97D2EF25E0E008F7539 /* HelloSwiftUI */,
 			);
-			name = HelloSwiftUI;
+			name = EkycDemo;
 			packageProductDependencies = (
 			);
 			productName = HelloSwiftUI;
-			productReference = 1286A97B2EF25E0E008F7539 /* HelloSwiftUI.app */;
+			productReference = 1286A97B2EF25E0E008F7539 /* EkycDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1286A98A2EF25E0F008F7539 /* HelloSwiftUITests */ = {
@@ -200,7 +256,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1286A97A2EF25E0E008F7539 /* HelloSwiftUI */,
+				1286A97A2EF25E0E008F7539 /* EkycDemo */,
 				1286A98A2EF25E0F008F7539 /* HelloSwiftUITests */,
 				1286A9942EF25E0F008F7539 /* HelloSwiftUIUITests */,
 			);
@@ -258,12 +314,12 @@
 /* Begin PBXTargetDependency section */
 		1286A98D2EF25E0F008F7539 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1286A97A2EF25E0E008F7539 /* HelloSwiftUI */;
+			target = 1286A97A2EF25E0E008F7539 /* EkycDemo */;
 			targetProxy = 1286A98C2EF25E0F008F7539 /* PBXContainerItemProxy */;
 		};
 		1286A9972EF25E0F008F7539 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1286A97A2EF25E0E008F7539 /* HelloSwiftUI */;
+			target = 1286A97A2EF25E0E008F7539 /* EkycDemo */;
 			targetProxy = 1286A9962EF25E0F008F7539 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -393,24 +449,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HelloSwiftUI/HelloSwiftUI.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HelloSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 873GZ4J6LK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HelloSwiftUI/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "This eKYC app needs NFC reader to scan chip";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This eKYC app needs to use camera to scan document";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobileCS.HelloSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobileCS.demokekycwrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,24 +484,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HelloSwiftUI/HelloSwiftUI.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HelloSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 873GZ4J6LK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HelloSwiftUI/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "This eKYC app needs NFC reader to scan chip";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This eKYC app needs to use camera to scan document";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mobileCS.HelloSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobileCS.demokekycwrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -530,7 +598,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1286A99F2EF25E0F008F7539 /* Build configuration list for PBXNativeTarget "HelloSwiftUI" */ = {
+		1286A99F2EF25E0F008F7539 /* Build configuration list for PBXNativeTarget "EkycDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1286A9A02EF25E0F008F7539 /* Debug */,
