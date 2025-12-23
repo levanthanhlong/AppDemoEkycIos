@@ -66,7 +66,7 @@
 		</data>
 		<key>Frameworks/KalapaSDK.framework/KalapaSDK</key>
 		<data>
-		2Zp8l8MLpKgCBtLNoTa8y+aWsb8=
+		p2E+FEtrr59hjuRd7TSUCbt8p78=
 		</data>
 		<key>Frameworks/KalapaSDK.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -239,7 +239,7 @@
 		</dict>
 		<key>Frameworks/iProov.framework/iProov</key>
 		<data>
-		K3jT38I4TxmnboD9RVeImLPIP1A=
+		kD6HjKYnViYsCMkebHQw0U/zQOQ=
 		</data>
 		<key>Frameworks/iProov.framework/iProov.plist</key>
 		<data>
@@ -291,23 +291,23 @@
 		</data>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		LWCzdNhG9fhSuynNGkzGdDqlQdk=
+		YHznzzy4xdIcMRBIDDD7JlBakrA=
 		</data>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ubSZSHgQxqWXXfB3MXtvv0lKkkQ=
+		y1jx5rxHAbcUayBJvp2cM/bWDRs=
 		</data>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		zcbrIHvlm0qdmnJNXhK/V9DwcZk=
+		rss7e6BrrekewI/DfQskmYjn9og=
 		</data>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ubSZSHgQxqWXXfB3MXtvv0lKkkQ=
+		y1jx5rxHAbcUayBJvp2cM/bWDRs=
 		</data>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		924kBHKI/lVAhdSE+1JEct1Lu/M=
+		5gS4O66mj1C1shfBhFyjLfhhhx8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -425,7 +425,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KtwcxRL6IP1HbTsStqYWZ+WS5kUrmEYCYCJwsOvkanw=
+			NQp1+LaSyDxO8sayPs/PbGGbxXOpMws/jFVDrpIo1rw=
 			</data>
 		</dict>
 		<key>Frameworks/KalapaSDK.framework/PrivacyInfo.xcprivacy</key>
@@ -640,7 +640,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			chaP0V/WeVR/zfqEem9wYJ3zUh1ajETaziy2u0EFAyg=
+			NE4eiaznjYG2YPY85aOxbAuekM6bbs84xd0E1vLFM8g=
 			</data>
 		</dict>
 		<key>Frameworks/iProov.framework/iProov.plist</key>
@@ -697,35 +697,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XNblTCHcJ55kdIGOY6pm7jDflBAN/q/OBrB+kWPGXBE=
+			9QD8AkHVc2XW2b47Q/wLpzSWu+YFsSJEvo1TRW7F768=
 			</data>
 		</dict>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WJOcLklYQRS7Uf6sZkuLvauugFl0RFZqvrEf1PLNaY8=
+			DHi6/ACLkwtI4ueL12bc+zz+AP/04qyXIlOUrzJmkWs=
 			</data>
 		</dict>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nXt69S4UG2iSO/Q3vyAfAFfOqzUuqxNpKrhQ3RKipfY=
+			xs23iIb8v4nJQ7dED86TN1e9MwUctmIkJRY7/ZlEUWk=
 			</data>
 		</dict>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WJOcLklYQRS7Uf6sZkuLvauugFl0RFZqvrEf1PLNaY8=
+			DHi6/ACLkwtI4ueL12bc+zz+AP/04qyXIlOUrzJmkWs=
 			</data>
 		</dict>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Tvx0PxWyxu6gh2aJJSvWgzL2Gnlb0uHlOj7nh8HqEM=
+			ucHs+F6C/OjS6xIGHxBh9L7GA2fziF9QNMdbrw/m6i8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

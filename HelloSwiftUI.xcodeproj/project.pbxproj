@@ -43,6 +43,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1266D1822EFA8A3400B94B71 /* Exceptions for "HelloSwiftUI" folder in "HelloSwiftUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SDK/CmcEkycSDK.xcframework,
+			);
+			target = 1286A98A2EF25E0F008F7539 /* HelloSwiftUITests */;
+		};
+		1266D1832EFA8A3400B94B71 /* Exceptions for "HelloSwiftUI" folder in "HelloSwiftUIUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SDK/CmcEkycSDK.xcframework,
+			);
+			target = 1286A9942EF25E0F008F7539 /* HelloSwiftUIUITests */;
+		};
 		12BA44D92EF3B7110037CED0 /* Exceptions for "HelloSwiftUI" folder in "EkycDemo" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -75,6 +89,8 @@
 			exceptions = (
 				12BA44D92EF3B7110037CED0 /* Exceptions for "HelloSwiftUI" folder in "EkycDemo" target */,
 				120A52272EF93B3500BC24F4 /* Exceptions for "HelloSwiftUI" folder in "Embed Frameworks" phase from "EkycDemo" target */,
+				1266D1822EFA8A3400B94B71 /* Exceptions for "HelloSwiftUI" folder in "HelloSwiftUITests" target */,
+				1266D1832EFA8A3400B94B71 /* Exceptions for "HelloSwiftUI" folder in "HelloSwiftUIUITests" target */,
 			);
 			path = HelloSwiftUI;
 			sourceTree = "<group>";

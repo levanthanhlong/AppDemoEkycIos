@@ -26,7 +26,7 @@ final class CmcEkycSDKTest {
             isAnimatedBtn: true,
             isShowResultScreen: true,
             customerLanguage: nil,
-            scanNFCTimeout: 10,
+            scanNFCTimeout: 30,
             livenessTimeout: 30,
             enableQRCode: false,
             livenessVersion: .passive,
@@ -83,31 +83,53 @@ final class CmcEkycSDKTest {
             },
             onShowLoading: {
                 print("Show loading")
-                DispatchQueue.main.async {
-                    let alert = UIAlertController(
-                        title: "Loading",
-                        message: "Please wait, loading data...",
-                        preferredStyle: .alert
-                    )
-                    // Nếu bạn muốn hiển thị spinner trong khi chờ
-                    let loadingIndicator = UIActivityIndicatorView(style: .medium)
-                    loadingIndicator.translatesAutoresizingMaskIntoConstraints = false
-                    loadingIndicator.startAnimating()
-                    alert.view.addSubview(loadingIndicator)
-                    NSLayoutConstraint.activate([
-                        loadingIndicator.centerXAnchor.constraint(equalTo: alert.view.centerXAnchor),
-                        loadingIndicator.topAnchor.constraint(equalTo: alert.view.topAnchor, constant: 30)
-                    ])
-                    viewController.present(alert, animated: true)
-                }
+//                DispatchQueue.main.async {
+//                    // Tạo UIAlertController
+//                    let alert = UIAlertController(
+//                        title: "Loading",
+//                        message: "Please wait, loading data...",
+//                        preferredStyle: .alert
+//                    )
+//                    
+//                    // Tạo UIActivityIndicatorView để hiển thị spinner
+//                    let loadingIndicator = UIActivityIndicatorView(style: .medium)
+//                    loadingIndicator.translatesAutoresizingMaskIntoConstraints = false
+//                    loadingIndicator.startAnimating()  // Bắt đầu quay spinner
+//                    
+//                    // Thêm spinner vào UIAlertController's view
+//                    alert.view.addSubview(loadingIndicator)
+//                    
+//                    // Đảm bảo spinner được căn giữa trong UIAlertController
+//                    NSLayoutConstraint.activate([
+//                        loadingIndicator.centerXAnchor.constraint(equalTo: alert.view.centerXAnchor),
+//                        loadingIndicator.topAnchor.constraint(equalTo: alert.view.topAnchor, constant: 30)
+//                    ])
+//                    
+//                    // Hiển thị UIAlertController
+//                    if let viewController = UIApplication.topViewController() {
+//                        viewController.present(alert, animated: true, completion: nil)
+//                        
+//                        // Cố định thời gian 3 giây, sau đó dismiss alert (ẩn spinner)
+//                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { // Sau 3 giây
+//                            alert.dismiss(animated: true, completion: {
+//                                print("Loading finished and alert dismissed.")
+//                            })
+//                        }
+//                    } else {
+//                        print("Error: Unable to find the top view controller.")
+//                    }
+//                }
             },
+
             onHideLoading: {
                 print("Hide loading")
-                DispatchQueue.main.async {
-                    if let presentedVC = viewController.presentedViewController as? UIAlertController {
-                        presentedVC.dismiss(animated: true, completion: nil)
-                    }
-                }
+//                DispatchQueue.main.async {
+//                    // Kiểm tra nếu UIAlertController đang được hiển thị
+//                    if let presentedVC = viewController.presentedViewController as? UIAlertController {
+//                        // Nếu có, ẩn UIAlertController
+//                        presentedVC.dismiss(animated: true, completion: nil)
+//                    }
+//                }
             },
             onShowError: { message, vc in
                 print("Error:", message ?? "")
@@ -121,12 +143,38 @@ final class CmcEkycSDKTest {
                     vc.present(alert, animated: true)
                 }
             },
-            onTimeoutScanNFC: { retry in
-                print("Timeout NFC")
-    
-            },
-
-            rawDataProcessor: nil
+            
+            rawDataProcessor: nil,
+            errorScanNFCCallback: { error, errorDescription, retry, dismiss in
+                // In ra lỗi NFC vào console
+                print("NFC Error: \(error), Description: \(errorDescription ?? "No description")")
+                
+                // Đảm bảo hiển thị UIAlertController trên main thread
+                DispatchQueue.main.async {
+                    let alert = UIAlertController(
+                        title: "NFC Error",
+                        message: errorDescription ?? "An unknown error occurred while scanning NFC.",
+                        preferredStyle: .alert
+                    )
+                    
+                    // Thêm hành động Retry
+                    alert.addAction(UIAlertAction(title: "Retry", style: .default, handler: { _ in
+                        retry?()  // Gọi closure retry nếu người dùng muốn thử lại
+                    }))
+                    
+                    // Thêm hành động Dismiss
+                    alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: { _ in
+                        dismiss?()  // Gọi closure dismiss nếu người dùng muốn đóng thông báo
+                    }))
+                    
+                    // Hiển thị popup lỗi NFC
+                    if let viewController = UIApplication.topViewController() {
+                        viewController.present(alert, animated: true, completion: nil)
+                    } else {
+                        print("Error: Unable to find the top view controller.")
+                    }
+                }
+            }
         )
     }
 }

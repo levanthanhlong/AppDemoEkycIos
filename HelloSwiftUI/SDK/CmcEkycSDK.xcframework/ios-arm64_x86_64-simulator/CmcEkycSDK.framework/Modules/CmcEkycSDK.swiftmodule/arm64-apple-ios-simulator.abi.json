@@ -23,6 +23,229 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "CmcEkycEnumResult",
+        "printedName": "CmcEkycEnumResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CmcEkycSDK.CmcEkycEnumResult.Type) -> CmcEkycSDK.CmcEkycEnumResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmcEkycEnumResult",
+                    "printedName": "CmcEkycSDK.CmcEkycEnumResult",
+                    "usr": "c:@M@CmcEkycSDK@E@CmcEkycEnumResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CmcEkycSDK.CmcEkycEnumResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CmcEkycEnumResult",
+                        "printedName": "CmcEkycSDK.CmcEkycEnumResult",
+                        "usr": "c:@M@CmcEkycSDK@E@CmcEkycEnumResult"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@CmcEkycSDK@E@CmcEkycEnumResult@CmcEkycEnumResultSuccess",
+            "mangledName": "$s10CmcEkycSDK0aB10EnumResultO7successyA2CmF",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "failure",
+            "printedName": "failure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CmcEkycSDK.CmcEkycEnumResult.Type) -> CmcEkycSDK.CmcEkycEnumResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmcEkycEnumResult",
+                    "printedName": "CmcEkycSDK.CmcEkycEnumResult",
+                    "usr": "c:@M@CmcEkycSDK@E@CmcEkycEnumResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CmcEkycSDK.CmcEkycEnumResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CmcEkycEnumResult",
+                        "printedName": "CmcEkycSDK.CmcEkycEnumResult",
+                        "usr": "c:@M@CmcEkycSDK@E@CmcEkycEnumResult"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@CmcEkycSDK@E@CmcEkycEnumResult@CmcEkycEnumResultFailure",
+            "mangledName": "$s10CmcEkycSDK0aB10EnumResultO7failureyA2CmF",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CmcEkycSDK.CmcEkycEnumResult?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmcEkycEnumResult",
+                    "printedName": "CmcEkycSDK.CmcEkycEnumResult",
+                    "usr": "c:@M@CmcEkycSDK@E@CmcEkycEnumResult"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10CmcEkycSDK0aB10EnumResultO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10CmcEkycSDK0aB10EnumResultO8rawValueACSgSi_tcfc",
+            "moduleName": "CmcEkycSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10CmcEkycSDK0aB10EnumResultO8rawValueSivp",
+            "mangledName": "$s10CmcEkycSDK0aB10EnumResultO8rawValueSivp",
+            "moduleName": "CmcEkycSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CmcEkycSDK0aB10EnumResultO8rawValueSivg",
+                "mangledName": "$s10CmcEkycSDK0aB10EnumResultO8rawValueSivg",
+                "moduleName": "CmcEkycSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@CmcEkycSDK@E@CmcEkycEnumResult",
+        "mangledName": "$s10CmcEkycSDK0aB10EnumResultO",
+        "moduleName": "CmcEkycSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "CmcEkycEvent",
         "printedName": "CmcEkycEvent",
         "children": [
@@ -4857,54 +5080,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "KalapaSDK",
-        "printedName": "KalapaSDK",
-        "declKind": "Import",
-        "moduleName": "CmcEkycSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "CmcRawDataProcessor",
-        "printedName": "CmcRawDataProcessor",
-        "declKind": "Protocol",
-        "usr": "c:@M@CmcEkycSDK@objc(pl)CmcRawDataProcessor",
-        "mangledName": "$s10CmcEkycSDK0A16RawDataProcessorP",
-        "moduleName": "CmcEkycSDK",
-        "genericSig": "<τ_0_0 : KalapaSDK.KLPRawDataProcessor>",
-        "sugared_genericSig": "<Self : KalapaSDK.KLPRawDataProcessor>",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "KLPRawDataProcessor",
-            "printedName": "KLPRawDataProcessor",
-            "usr": "c:@M@KalapaSDK@objc(pl)KLPRawDataProcessor",
-            "mangledName": "$s9KalapaSDK19KLPRawDataProcessorP"
-          }
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "CmcEkycNfcResult",
         "printedName": "CmcEkycNfcResult",
@@ -6968,229 +7143,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "CmcEkycEnumResult",
-        "printedName": "CmcEkycEnumResult",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "success",
-            "printedName": "success",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(CmcEkycSDK.CmcEkycEnumResult.Type) -> CmcEkycSDK.CmcEkycEnumResult",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CmcEkycEnumResult",
-                    "printedName": "CmcEkycSDK.CmcEkycEnumResult",
-                    "usr": "c:@M@CmcEkycSDK@E@CmcEkycEnumResult"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "CmcEkycSDK.CmcEkycEnumResult.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CmcEkycEnumResult",
-                        "printedName": "CmcEkycSDK.CmcEkycEnumResult",
-                        "usr": "c:@M@CmcEkycSDK@E@CmcEkycEnumResult"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@CmcEkycSDK@E@CmcEkycEnumResult@CmcEkycEnumResultSuccess",
-            "mangledName": "$s10CmcEkycSDK0aB10EnumResultO7successyA2CmF",
-            "moduleName": "CmcEkycSDK",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "failure",
-            "printedName": "failure",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(CmcEkycSDK.CmcEkycEnumResult.Type) -> CmcEkycSDK.CmcEkycEnumResult",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CmcEkycEnumResult",
-                    "printedName": "CmcEkycSDK.CmcEkycEnumResult",
-                    "usr": "c:@M@CmcEkycSDK@E@CmcEkycEnumResult"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "CmcEkycSDK.CmcEkycEnumResult.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CmcEkycEnumResult",
-                        "printedName": "CmcEkycSDK.CmcEkycEnumResult",
-                        "usr": "c:@M@CmcEkycSDK@E@CmcEkycEnumResult"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@CmcEkycSDK@E@CmcEkycEnumResult@CmcEkycEnumResultFailure",
-            "mangledName": "$s10CmcEkycSDK0aB10EnumResultO7failureyA2CmF",
-            "moduleName": "CmcEkycSDK",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "CmcEkycSDK.CmcEkycEnumResult?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CmcEkycEnumResult",
-                    "printedName": "CmcEkycSDK.CmcEkycEnumResult",
-                    "usr": "c:@M@CmcEkycSDK@E@CmcEkycEnumResult"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10CmcEkycSDK0aB10EnumResultO8rawValueACSgSi_tcfc",
-            "mangledName": "$s10CmcEkycSDK0aB10EnumResultO8rawValueACSgSi_tcfc",
-            "moduleName": "CmcEkycSDK",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10CmcEkycSDK0aB10EnumResultO8rawValueSivp",
-            "mangledName": "$s10CmcEkycSDK0aB10EnumResultO8rawValueSivp",
-            "moduleName": "CmcEkycSDK",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10CmcEkycSDK0aB10EnumResultO8rawValueSivg",
-                "mangledName": "$s10CmcEkycSDK0aB10EnumResultO8rawValueSivg",
-                "moduleName": "CmcEkycSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "c:@M@CmcEkycSDK@E@CmcEkycEnumResult",
-        "mangledName": "$s10CmcEkycSDK0aB10EnumResultO",
-        "moduleName": "CmcEkycSDK",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "CmcEkycQrCodeResult",
         "printedName": "CmcEkycQrCodeResult",
         "children": [
@@ -8208,6 +8160,393 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CmcScanNFCError",
+        "printedName": "CmcScanNFCError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ERROR_NFC_INFO_NOT_MATCH",
+            "printedName": "ERROR_NFC_INFO_NOT_MATCH",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CmcEkycSDK.CmcScanNFCError.Type) -> CmcEkycSDK.CmcScanNFCError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmcScanNFCError",
+                    "printedName": "CmcEkycSDK.CmcScanNFCError",
+                    "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CmcEkycSDK.CmcScanNFCError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CmcScanNFCError",
+                        "printedName": "CmcEkycSDK.CmcScanNFCError",
+                        "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError@CmcScanNFCErrorERROR_NFC_INFO_NOT_MATCH",
+            "mangledName": "$s10CmcEkycSDK0A12ScanNFCErrorO24ERROR_NFC_INFO_NOT_MATCHyA2CmF",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "ERROR_FACE_NOT_MATCH",
+            "printedName": "ERROR_FACE_NOT_MATCH",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CmcEkycSDK.CmcScanNFCError.Type) -> CmcEkycSDK.CmcScanNFCError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmcScanNFCError",
+                    "printedName": "CmcEkycSDK.CmcScanNFCError",
+                    "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CmcEkycSDK.CmcScanNFCError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CmcScanNFCError",
+                        "printedName": "CmcEkycSDK.CmcScanNFCError",
+                        "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError@CmcScanNFCErrorERROR_FACE_NOT_MATCH",
+            "mangledName": "$s10CmcEkycSDK0A12ScanNFCErrorO20ERROR_FACE_NOT_MATCHyA2CmF",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "ERROR_NFC_INVALID",
+            "printedName": "ERROR_NFC_INVALID",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CmcEkycSDK.CmcScanNFCError.Type) -> CmcEkycSDK.CmcScanNFCError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmcScanNFCError",
+                    "printedName": "CmcEkycSDK.CmcScanNFCError",
+                    "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CmcEkycSDK.CmcScanNFCError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CmcScanNFCError",
+                        "printedName": "CmcEkycSDK.CmcScanNFCError",
+                        "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError@CmcScanNFCErrorERROR_NFC_INVALID",
+            "mangledName": "$s10CmcEkycSDK0A12ScanNFCErrorO17ERROR_NFC_INVALIDyA2CmF",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "ERROR_NFC_TIMEOUT",
+            "printedName": "ERROR_NFC_TIMEOUT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CmcEkycSDK.CmcScanNFCError.Type) -> CmcEkycSDK.CmcScanNFCError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmcScanNFCError",
+                    "printedName": "CmcEkycSDK.CmcScanNFCError",
+                    "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CmcEkycSDK.CmcScanNFCError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CmcScanNFCError",
+                        "printedName": "CmcEkycSDK.CmcScanNFCError",
+                        "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError@CmcScanNFCErrorERROR_NFC_TIMEOUT",
+            "mangledName": "$s10CmcEkycSDK0A12ScanNFCErrorO17ERROR_NFC_TIMEOUTyA2CmF",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "ERROR_NA",
+            "printedName": "ERROR_NA",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(CmcEkycSDK.CmcScanNFCError.Type) -> CmcEkycSDK.CmcScanNFCError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmcScanNFCError",
+                    "printedName": "CmcEkycSDK.CmcScanNFCError",
+                    "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "CmcEkycSDK.CmcScanNFCError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CmcScanNFCError",
+                        "printedName": "CmcEkycSDK.CmcScanNFCError",
+                        "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError@CmcScanNFCErrorERROR_NA",
+            "mangledName": "$s10CmcEkycSDK0A12ScanNFCErrorO8ERROR_NAyA2CmF",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10CmcEkycSDK0A12ScanNFCErrorO4codeSivp",
+            "mangledName": "$s10CmcEkycSDK0A12ScanNFCErrorO4codeSivp",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CmcEkycSDK0A12ScanNFCErrorO4codeSivg",
+                "mangledName": "$s10CmcEkycSDK0A12ScanNFCErrorO4codeSivg",
+                "moduleName": "CmcEkycSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CmcEkycSDK.CmcScanNFCError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CmcScanNFCError",
+                    "printedName": "CmcEkycSDK.CmcScanNFCError",
+                    "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10CmcEkycSDK0A12ScanNFCErrorO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10CmcEkycSDK0A12ScanNFCErrorO8rawValueACSgSi_tcfc",
+            "moduleName": "CmcEkycSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10CmcEkycSDK0A12ScanNFCErrorO8rawValueSivp",
+            "mangledName": "$s10CmcEkycSDK0A12ScanNFCErrorO8rawValueSivp",
+            "moduleName": "CmcEkycSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10CmcEkycSDK0A12ScanNFCErrorO8rawValueSivg",
+                "mangledName": "$s10CmcEkycSDK0A12ScanNFCErrorO8rawValueSivg",
+                "moduleName": "CmcEkycSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError",
+        "mangledName": "$s10CmcEkycSDK0A12ScanNFCErrorO",
+        "moduleName": "CmcEkycSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
           }
         ]
       },
@@ -9420,6 +9759,54 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "KalapaSDK",
+        "printedName": "KalapaSDK",
+        "declKind": "Import",
+        "moduleName": "CmcEkycSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CmcRawDataProcessor",
+        "printedName": "CmcRawDataProcessor",
+        "declKind": "Protocol",
+        "usr": "c:@M@CmcEkycSDK@objc(pl)CmcRawDataProcessor",
+        "mangledName": "$s10CmcEkycSDK0A16RawDataProcessorP",
+        "moduleName": "CmcEkycSDK",
+        "genericSig": "<τ_0_0 : KalapaSDK.KLPRawDataProcessor>",
+        "sugared_genericSig": "<Self : KalapaSDK.KLPRawDataProcessor>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "KLPRawDataProcessor",
+            "printedName": "KLPRawDataProcessor",
+            "usr": "c:@M@KalapaSDK@objc(pl)KLPRawDataProcessor",
+            "mangledName": "$s9KalapaSDK19KLPRawDataProcessorP"
+          }
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "CmcEkycManager",
         "printedName": "CmcEkycManager",
@@ -9480,7 +9867,7 @@
           {
             "kind": "Function",
             "name": "startEkyc",
-            "printedName": "startEkyc(from:session:baseUrl:language:mainColor:btnTextColor:backgroundColor:isAnimatedBtn:isShowResultScreen:customerLanguage:scanNFCTimeout:livenessTimeout:enableQRCode:livenessVersion:isOnlyShowReasonInResultVC:cornerRadiusBtn:flowType:mrz:faceData:onResult:onEvent:onShowLoading:onHideLoading:onShowError:onTimeoutScanNFC:rawDataProcessor:)",
+            "printedName": "startEkyc(from:session:baseUrl:language:mainColor:btnTextColor:backgroundColor:isAnimatedBtn:isShowResultScreen:customerLanguage:scanNFCTimeout:livenessTimeout:enableQRCode:livenessVersion:isOnlyShowReasonInResultVC:cornerRadiusBtn:flowType:mrz:faceData:onResult:onEvent:onShowLoading:onHideLoading:onShowError:rawDataProcessor:errorScanNFCCallback:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9835,52 +10222,6 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(((() -> ())?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "((() -> ())?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "(() -> ())?",
-                        "children": [
-                          {
-                            "kind": "TypeFunc",
-                            "name": "Function",
-                            "printedName": "() -> ()",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Void",
-                                "printedName": "()"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Void",
-                                "printedName": "()"
-                              }
-                            ]
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
                 "printedName": "(any CmcEkycSDK.CmcRawDataProcessor)?",
                 "children": [
                   {
@@ -9892,11 +10233,108 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((CmcEkycSDK.CmcScanNFCError, Swift.String?, (() -> ())?, (() -> ())?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CmcEkycSDK.CmcScanNFCError, Swift.String?, (() -> ())?, (() -> ())?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(CmcEkycSDK.CmcScanNFCError, Swift.String?, (() -> ())?, (() -> ())?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CmcScanNFCError",
+                            "printedName": "CmcEkycSDK.CmcScanNFCError",
+                            "usr": "c:@M@CmcEkycSDK@E@CmcScanNFCError"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(() -> ())?",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "() -> ()",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Void",
+                                    "printedName": "()"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Void",
+                                    "printedName": "()"
+                                  }
+                                ]
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(() -> ())?",
+                            "children": [
+                              {
+                                "kind": "TypeFunc",
+                                "name": "Function",
+                                "printedName": "() -> ()",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Void",
+                                    "printedName": "()"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Void",
+                                    "printedName": "()"
+                                  }
+                                ]
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10CmcEkycSDK0aB7ManagerC05startB04from7session7baseUrl8language9mainColor07btnTextL0010backgroundL013isAnimatedBtn0P16ShowResultScreen16customerLanguage14scanNFCTimeout15livenessTimeout12enableQRCode0Z7Version0p4Onlys8ReasonInT2VC012cornerRadiusR08flowType3mrz8faceData02onT07onEvent02onS7Loading13onHideLoading02onS5Error16onTimeoutScanNFC16rawDataProcessorySo16UIViewControllerC_S6SS2bSSSgSiSgA6_SbAA0aB15LivenessVersionOSgSbSg14CoreFoundation7CGFloatVAA0aB8FlowTypeOA5_A5_yAA0abT0CSgcSgyAA0aB5EventOcSgyycSgA23_yA5__A4_tcSgyA23_cSgAA0A16RawDataProcessor_pSgtF",
-            "mangledName": "$s10CmcEkycSDK0aB7ManagerC05startB04from7session7baseUrl8language9mainColor07btnTextL0010backgroundL013isAnimatedBtn0P16ShowResultScreen16customerLanguage14scanNFCTimeout15livenessTimeout12enableQRCode0Z7Version0p4Onlys8ReasonInT2VC012cornerRadiusR08flowType3mrz8faceData02onT07onEvent02onS7Loading13onHideLoading02onS5Error16onTimeoutScanNFC16rawDataProcessorySo16UIViewControllerC_S6SS2bSSSgSiSgA6_SbAA0aB15LivenessVersionOSgSbSg12CoreGraphics7CGFloatVAA0aB8FlowTypeOA5_A5_yAA0abT0CSgcSgyAA0aB5EventOcSgyycSgA23_yA5__A4_tcSgyA23_cSgAA0A16RawDataProcessor_pSgtF",
+            "usr": "s:10CmcEkycSDK0aB7ManagerC05startB04from7session7baseUrl8language9mainColor07btnTextL0010backgroundL013isAnimatedBtn0P16ShowResultScreen16customerLanguage14scanNFCTimeout15livenessTimeout12enableQRCode0Z7Version0p4Onlys8ReasonInT2VC012cornerRadiusR08flowType3mrz8faceData02onT07onEvent02onS7Loading13onHideLoading02onS5Error16rawDataProcessor20errorScanNFCCallbackySo16UIViewControllerC_S6SS2bSSSgSiSgA6_SbAA0aB15LivenessVersionOSgSbSg14CoreFoundation7CGFloatVAA0aB8FlowTypeOA5_A5_yAA0abT0CSgcSgyAA0aB5EventOcSgyycSgA23_yA5__A4_tcSgAA0A16RawDataProcessor_pSgyAA0A12ScanNFCErrorO_A5_A23_A23_tcSgtF",
+            "mangledName": "$s10CmcEkycSDK0aB7ManagerC05startB04from7session7baseUrl8language9mainColor07btnTextL0010backgroundL013isAnimatedBtn0P16ShowResultScreen16customerLanguage14scanNFCTimeout15livenessTimeout12enableQRCode0Z7Version0p4Onlys8ReasonInT2VC012cornerRadiusR08flowType3mrz8faceData02onT07onEvent02onS7Loading13onHideLoading02onS5Error16rawDataProcessor20errorScanNFCCallbackySo16UIViewControllerC_S6SS2bSSSgSiSgA6_SbAA0aB15LivenessVersionOSgSbSg12CoreGraphics7CGFloatVAA0aB8FlowTypeOA5_A5_yAA0abT0CSgcSgyAA0aB5EventOcSgyycSgA23_yA5__A4_tcSgAA0A16RawDataProcessor_pSgyAA0A12ScanNFCErrorO_A5_A23_A23_tcSgtF",
             "moduleName": "CmcEkycSDK",
             "declAttributes": [
               "Final",
@@ -9993,6 +10431,13 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycEnumResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 159,
+      "length": 7,
+      "value": "1"
+    },
+    {
       "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 227,
@@ -10042,65 +10487,93 @@
       "value": "2"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycEnumResult.swift",
+      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcScanNFCError.swift",
       "kind": "IntegerLiteral",
-      "offset": 159,
-      "length": 7,
-      "value": "1"
+      "offset": 164,
+      "length": 2,
+      "value": "51"
+    },
+    {
+      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcScanNFCError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 199,
+      "length": 2,
+      "value": "21"
+    },
+    {
+      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcScanNFCError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 231,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcScanNFCError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 264,
+      "length": 3,
+      "value": "401"
+    },
+    {
+      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcScanNFCError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 288,
+      "length": 2,
+      "value": "-1"
     },
     {
       "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "StringLiteral",
-      "offset": 374,
+      "offset": 378,
       "length": 4,
       "value": "\"vi\""
     },
     {
       "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "StringLiteral",
-      "offset": 408,
+      "offset": 412,
       "length": 9,
       "value": "\"#6CB096\""
     },
     {
       "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "StringLiteral",
-      "offset": 450,
+      "offset": 454,
       "length": 9,
       "value": "\"#FFFFFF\""
     },
     {
       "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "StringLiteral",
-      "offset": 495,
+      "offset": 499,
       "length": 9,
       "value": "\"#FFFFFF\""
     },
     {
       "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 536,
+      "offset": 540,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 577,
+      "offset": 581,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 714,
+      "offset": 718,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 855,
+      "offset": 859,
       "length": 2,
       "value": "10"
     }

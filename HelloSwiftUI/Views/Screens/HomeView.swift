@@ -44,24 +44,25 @@ struct HomeView: View {
                 }
                 .buttonStyle(CustomButtonStyle())
                 
-                // Nút start SDK
                 PrimaryButton(title: "Start SDK", isDisabled: isStartingEkyc) {
                     guard !isStartingEkyc else { return }
                     
                     isStartingEkyc = true  // 🔒 khóa nút ngay
                     
                     Task { @MainActor in
+                        // Đảm bảo gọi topViewController trên main thread
                         guard let vc = UIApplication.topViewController() else {
                             isStartingEkyc = false
                             return
                         }
                         
+                        // Đảm bảo gọi startEkyc trên main thread
                         DispatchQueue.main.async {
-                            guard let vc = UIApplication.topViewController() else { return }
                             CmcEkycSDKTest.startEkyc(from: vc)
                         }
                     }
                 }
+
                 .buttonStyle(CustomButtonStyle())
                 
             }
