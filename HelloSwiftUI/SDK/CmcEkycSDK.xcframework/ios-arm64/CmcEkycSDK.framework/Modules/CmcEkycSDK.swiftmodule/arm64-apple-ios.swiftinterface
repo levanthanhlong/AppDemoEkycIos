@@ -1,0 +1,196 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CmcEkycSDK
+@_exported import CmcEkycSDK
+import Foundation
+import KalapaSDK
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public enum CmcEkycEvent : Swift.Int {
+  case sessionTerminated
+  case sessionExpired
+  case livenessExpired
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum CmcEkycFlowType : Swift.Int {
+  case ekyc
+  case nfcEkyc
+  case nfcOnly
+  case passport
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum CmcEkycLivenessVersion : Swift.Int {
+  case passive
+  case semiActive
+  case active
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers final public class CmcEkycDecisionDetail : ObjectiveC.NSObject {
+  @objc final public let code: Swift.String?
+  @objc final public let descriptionEn: Swift.String?
+  @objc final public let descriptionVi: Swift.String?
+  final public let isPass: Swift.Bool?
+  @objc final public let alias: Swift.String?
+  @objc final public let rawData: [Swift.String : Any]
+  public init(code: Swift.String?, descriptionEn: Swift.String?, descriptionVi: Swift.String?, isPass: Swift.Bool?, alias: Swift.String?, rawData: [Swift.String : Any])
+  @objc deinit
+}
+@objc @objcMembers final public class CmcEkycField : ObjectiveC.NSObject {
+  @objc final public let idNumber: Swift.String?
+  @objc final public let name: Swift.String?
+  @objc final public let birthday: Swift.String?
+  @objc final public let gender: Swift.String?
+  @objc final public let type: Swift.String?
+  @objc final public let country: Swift.String?
+  @objc final public let nationality: Swift.String?
+  @objc final public let ethnicity: Swift.String?
+  @objc final public let religion: Swift.String?
+  @objc final public let dateOfIssue: Swift.String?
+  @objc final public let dateOfExpiry: Swift.String?
+  @objc final public let placeOfIssue: Swift.String?
+  @objc final public let resident: Swift.String?
+  @objc final public let home: Swift.String?
+  @objc final public let residentEntity: CmcEkycSDK.CmcEkycResidentEntity?
+  @objc final public let homeEntity: CmcEkycSDK.CmcEkycHomeEntity?
+  @objc final public let features: Swift.String?
+  @objc final public let rawData: [Swift.String : Any]
+  @objc public init(idNumber: Swift.String?, name: Swift.String?, birthday: Swift.String?, gender: Swift.String?, type: Swift.String?, country: Swift.String?, nationality: Swift.String?, ethnicity: Swift.String?, religion: Swift.String?, dateOfIssue: Swift.String?, dateOfExpiry: Swift.String?, placeOfIssue: Swift.String?, resident: Swift.String?, home: Swift.String?, residentEntity: CmcEkycSDK.CmcEkycResidentEntity?, homeEntity: CmcEkycSDK.CmcEkycHomeEntity?, features: Swift.String?, rawData: [Swift.String : Any])
+  @objc deinit
+}
+@objc @objcMembers final public class CmcEkycFrontResult : ObjectiveC.NSObject {
+  final public let blurScore: Swift.Float?
+  final public let flashScore: Swift.Int?
+  final public let photocopyScore: Swift.Float?
+  @objc final public let cardType: Swift.String?
+  @objc final public let field: CmcEkycSDK.CmcEkycField?
+  @objc final public let qrCodeResult: CmcEkycSDK.CmcEkycQrCodeResult?
+  @objc final public let mrzResult: CmcEkycSDK.CmcEkycMrzResult?
+  @objc final public let rawData: [Swift.String : Any]
+  public init(blurScore: Swift.Float?, flashScore: Swift.Int?, photocopyScore: Swift.Float?, cardType: Swift.String?, field: CmcEkycSDK.CmcEkycField?, qrCodeResult: CmcEkycSDK.CmcEkycQrCodeResult?, mrzResult: CmcEkycSDK.CmcEkycMrzResult?, rawData: [Swift.String : Any])
+  @objc deinit
+}
+@objc @objcMembers final public class CmcEkycHomeEntity : ObjectiveC.NSObject {
+  @objc final public let rawData: [Swift.String : Any]
+  @objc public init(rawData: [Swift.String : Any])
+  @objc deinit
+}
+@objc @objcMembers final public class CmcEkycMrzData : ObjectiveC.NSObject {
+  @objc final public let rawMrz: Swift.String?
+  @objc final public let rawData: [Swift.String : Any]
+  @objc public init(rawMrz: Swift.String?, rawData: [Swift.String : Any])
+  @objc deinit
+}
+@objc @objcMembers final public class CmcEkycMrzResult : ObjectiveC.NSObject {
+  @objc final public let data: CmcEkycSDK.CmcEkycMrzData?
+  @objc final public let error: [Swift.String : Any]?
+  @objc final public let rawData: [Swift.String : Any]
+  @objc public init(data: CmcEkycSDK.CmcEkycMrzData?, error: [Swift.String : Any]?, rawData: [Swift.String : Any])
+  @objc deinit
+}
+@objc public protocol CmcRawDataProcessor : KalapaSDK.KLPRawDataProcessor {
+}
+@objc @objcMembers final public class CmcEkycNfcResult : ObjectiveC.NSObject {
+  @objc final public let idNumber: Swift.String?
+  @objc final public let oldIdNumber: Swift.String?
+  @objc final public let name: Swift.String?
+  @objc final public let nationality: Swift.String?
+  @objc final public let dateOfBirth: Swift.String?
+  @objc final public let gender: Swift.String?
+  @objc final public let dateOfIssuance: Swift.String?
+  @objc final public let dateOfExpiry: Swift.String?
+  @objc final public let personalIdentification: Swift.String?
+  @objc final public let address: Swift.String?
+  @objc final public let hometown: Swift.String?
+  @objc final public let nation: Swift.String?
+  @objc final public let religion: Swift.String?
+  @objc final public let fatherName: Swift.String?
+  @objc final public let motherName: Swift.String?
+  @objc final public let spouseName: Swift.String?
+  @objc final public let mrz: Swift.String?
+  @objc final public let faceImage: Swift.String?
+  @objc final public let faceImageBase64: Swift.String?
+  @objc final public let rawData: [Swift.String : Any]
+  @objc public init(idNumber: Swift.String?, oldIdNumber: Swift.String?, name: Swift.String?, nationality: Swift.String?, dateOfBirth: Swift.String?, gender: Swift.String?, dateOfIssuance: Swift.String?, dateOfExpiry: Swift.String?, personalIdentification: Swift.String?, address: Swift.String?, hometown: Swift.String?, nation: Swift.String?, religion: Swift.String?, fatherName: Swift.String?, motherName: Swift.String?, spouseName: Swift.String?, mrz: Swift.String?, faceImage: Swift.String?, faceImageBase64: Swift.String?, rawData: [Swift.String : Any])
+  @objc deinit
+}
+@objc @objcMembers final public class CmcEkycQrCodeModel : ObjectiveC.NSObject {
+  @objc final public let rawData: [Swift.String : Any]
+  @objc final public let rawJsonString: Swift.String?
+  @objc public init(rawData: [Swift.String : Any], rawJsonString: Swift.String?)
+  @objc deinit
+}
+@objc public enum CmcEkycEnumResult : Swift.Int {
+  case success
+  case failure
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers final public class CmcEkycQrCodeResult : ObjectiveC.NSObject {
+  @objc final public let data: [Swift.String : Any]?
+  @objc final public let error: [Swift.String : Any]?
+  @objc final public let rawData: [Swift.String : Any]
+  @objc public init(data: [Swift.String : Any]?, error: [Swift.String : Any]?, rawData: [Swift.String : Any])
+  @objc deinit
+}
+@objc @objcMembers final public class CmcEkycResidentEntity : ObjectiveC.NSObject {
+  @objc final public let province: Swift.String?
+  @objc final public let district: Swift.String?
+  @objc final public let ward: Swift.String?
+  @objc final public let unknown: Swift.String?
+  @objc final public let rawData: [Swift.String : Any]
+  @objc public init(province: Swift.String?, district: Swift.String?, ward: Swift.String?, unknown: Swift.String?, rawData: [Swift.String : Any])
+  @objc deinit
+}
+@objc @objcMembers final public class CmcEkycResult : ObjectiveC.NSObject {
+  @objc final public let session: Swift.String?
+  @objc final public let decision: Swift.String?
+  @objc final public let decisionDetails: [CmcEkycSDK.CmcEkycDecisionDetail]?
+  @objc final public let frontResult: CmcEkycSDK.CmcEkycFrontResult?
+  @objc final public let backResult: CmcEkycSDK.CmcEkycBackResult?
+  @objc final public let nfcResult: CmcEkycSDK.CmcEkycNfcResult?
+  @objc final public let qrCodeResult: CmcEkycSDK.CmcEkycQrCodeModel?
+  @objc final public let mrz: Swift.String?
+  @objc final public let rawData: [Swift.String : Any]
+  @objc public init(session: Swift.String?, decision: Swift.String?, decisionDetails: [CmcEkycSDK.CmcEkycDecisionDetail]?, frontResult: CmcEkycSDK.CmcEkycFrontResult?, backResult: CmcEkycSDK.CmcEkycBackResult?, nfcResult: CmcEkycSDK.CmcEkycNfcResult?, qrCodeResult: CmcEkycSDK.CmcEkycQrCodeModel?, mrz: Swift.String?, rawData: [Swift.String : Any])
+  @objc deinit
+}
+@objc @objcMembers final public class CmcEkycBackResult : ObjectiveC.NSObject {
+  @objc final public let rawData: [Swift.String : Any]
+  @objc final public let mrz: Swift.String?
+  @objc public init(rawData: [Swift.String : Any], mrz: Swift.String?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class CmcEkycManager : ObjectiveC.NSObject {
+  @objc public static let shared: CmcEkycSDK.CmcEkycManager
+  final public func startEkyc(from viewController: UIKit.UIViewController, session: Swift.String, baseUrl: Swift.String, language: Swift.String = "vi", mainColor: Swift.String = "#6CB096", btnTextColor: Swift.String = "#FFFFFF", backgroundColor: Swift.String = "#FFFFFF", isAnimatedBtn: Swift.Bool = true, isShowResultScreen: Swift.Bool = true, customerLanguage: Swift.String? = nil, scanNFCTimeout: Swift.Int?, livenessTimeout: Swift.Int?, enableQRCode: Swift.Bool = false, livenessVersion: CmcEkycSDK.CmcEkycLivenessVersion? = nil, isOnlyShowReasonInResultVC: Swift.Bool?, cornerRadiusBtn: CoreFoundation.CGFloat = 10, flowType: CmcEkycSDK.CmcEkycFlowType = .ekyc, mrz: Swift.String? = nil, faceData: Swift.String? = nil, onResult: ((CmcEkycSDK.CmcEkycResult?) -> Swift.Void)? = nil, onEvent: ((CmcEkycSDK.CmcEkycEvent) -> Swift.Void)? = nil, onShowLoading: (() -> Swift.Void)? = nil, onHideLoading: (() -> Swift.Void)? = nil, onShowError: ((Swift.String?, UIKit.UIViewController) -> Swift.Void)? = nil, onTimeoutScanNFC: (((() -> Swift.Void)?) -> Swift.Void)? = nil, rawDataProcessor: (any CmcEkycSDK.CmcRawDataProcessor)? = nil)
+  @objc deinit
+}
+extension CmcEkycSDK.CmcEkycEvent : Swift.Equatable {}
+extension CmcEkycSDK.CmcEkycEvent : Swift.Hashable {}
+extension CmcEkycSDK.CmcEkycEvent : Swift.RawRepresentable {}
+extension CmcEkycSDK.CmcEkycFlowType : Swift.Equatable {}
+extension CmcEkycSDK.CmcEkycFlowType : Swift.Hashable {}
+extension CmcEkycSDK.CmcEkycFlowType : Swift.RawRepresentable {}
+extension CmcEkycSDK.CmcEkycLivenessVersion : Swift.Equatable {}
+extension CmcEkycSDK.CmcEkycLivenessVersion : Swift.Hashable {}
+extension CmcEkycSDK.CmcEkycLivenessVersion : Swift.RawRepresentable {}
+extension CmcEkycSDK.CmcEkycEnumResult : Swift.Equatable {}
+extension CmcEkycSDK.CmcEkycEnumResult : Swift.Hashable {}
+extension CmcEkycSDK.CmcEkycEnumResult : Swift.RawRepresentable {}

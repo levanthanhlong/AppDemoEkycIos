@@ -6,15 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		12782EE12EF531BB0089E748 /* CmcEkycSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12782EDA2EF52D520089E748 /* CmcEkycSDK.xcframework */; };
-		12782EE22EF531BB0089E748 /* CmcEkycSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12782EDA2EF52D520089E748 /* CmcEkycSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1286A9CE2EF2BAC2008F7539 /* KalapaSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1286A9CD2EF2BAC2008F7539 /* KalapaSDK.xcframework */; };
-		1286A9CF2EF2BAC2008F7539 /* KalapaSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1286A9CD2EF2BAC2008F7539 /* KalapaSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1286A9D42EF2BDC3008F7539 /* iProov.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1286A9D32EF2BDC3008F7539 /* iProov.xcframework */; };
-		1286A9D52EF2BDC3008F7539 /* iProov.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1286A9D32EF2BDC3008F7539 /* iProov.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		1286A98C2EF25E0F008F7539 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -33,15 +24,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1286A9D02EF2BAC2008F7539 /* Embed Frameworks */ = {
+		120A515C2EF8FB7100BC24F4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1286A9D52EF2BDC3008F7539 /* iProov.xcframework in Embed Frameworks */,
-				12782EE22EF531BB0089E748 /* CmcEkycSDK.xcframework in Embed Frameworks */,
-				1286A9CF2EF2BAC2008F7539 /* KalapaSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,12 +37,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		12782EDA2EF52D520089E748 /* CmcEkycSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CmcEkycSDK.xcframework; path = "../../../SDK-wrapper-new/ios/swift/CmcEkycSDK/build/CmcEkycSDK.xcframework"; sourceTree = "<group>"; };
 		1286A97B2EF25E0E008F7539 /* EkycDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EkycDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1286A98B2EF25E0F008F7539 /* HelloSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1286A9952EF25E0F008F7539 /* HelloSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1286A9CD2EF2BAC2008F7539 /* KalapaSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KalapaSDK.xcframework; path = ../../../../newSDKKALAPA/KalapaSDK.xcframework; sourceTree = "<group>"; };
-		1286A9D32EF2BDC3008F7539 /* iProov.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:622Y49N79Q:iProov Limited"; lastKnownFileType = wrapper.xcframework; name = iProov.xcframework; path = ../../../../importSDKIOS/SDK/iProov.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -67,11 +52,29 @@
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		120A52272EF93B3500BC24F4 /* Exceptions for "HelloSwiftUI" folder in "Embed Frameworks" phase from "EkycDemo" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			attributesByRelativePath = {
+				SDK/CmcEkycSDK.xcframework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
+				SDK/KalapaSDK.xcframework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
+				SDK/iProov.xcframework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
+			};
+			buildPhase = 120A515C2EF8FB7100BC24F4 /* Embed Frameworks */;
+			membershipExceptions = (
+				SDK/CmcEkycSDK.xcframework,
+				SDK/iProov.xcframework,
+				SDK/KalapaSDK.xcframework,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1286A97D2EF25E0E008F7539 /* HelloSwiftUI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				12BA44D92EF3B7110037CED0 /* Exceptions for "HelloSwiftUI" folder in "EkycDemo" target */,
+				120A52272EF93B3500BC24F4 /* Exceptions for "HelloSwiftUI" folder in "Embed Frameworks" phase from "EkycDemo" target */,
 			);
 			path = HelloSwiftUI;
 			sourceTree = "<group>";
@@ -93,9 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1286A9D42EF2BDC3008F7539 /* iProov.xcframework in Frameworks */,
-				12782EE12EF531BB0089E748 /* CmcEkycSDK.xcframework in Frameworks */,
-				1286A9CE2EF2BAC2008F7539 /* KalapaSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,9 +140,6 @@
 		1286A9CC2EF2BAC2008F7539 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				12782EDA2EF52D520089E748 /* CmcEkycSDK.xcframework */,
-				1286A9D32EF2BDC3008F7539 /* iProov.xcframework */,
-				1286A9CD2EF2BAC2008F7539 /* KalapaSDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,7 +154,7 @@
 				1286A9772EF25E0E008F7539 /* Sources */,
 				1286A9782EF25E0E008F7539 /* Frameworks */,
 				1286A9792EF25E0E008F7539 /* Resources */,
-				1286A9D02EF2BAC2008F7539 /* Embed Frameworks */,
+				120A515C2EF8FB7100BC24F4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

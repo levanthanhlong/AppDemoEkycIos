@@ -4,51 +4,12 @@
 ////
 ////  Created by ThanhLe on 17/12/25.
 ////
-//
-//import SwiftUI
-//import CmcEkycSDK
-//struct ContentView: View {
-//    // "nfc_only" "ekyc" "nfc_ekyc"
-//    
-//    @State private var navigateToHomeView = false
-//    @State private var showToast: Bool = false
-//    @State private var toastMessage: String = ""
-//    @State private var isClidked: Bool = false
-//    var body: some View {
-//        NavigationStack{
-//            VStack(spacing: 20){
-//                Text("Option flow:")
-//                PrimaryButton(title: "test flow nfc_only"){
-//                    Data.FLOW_API = "nfc_only"
-//                    Data.FLOW_TYPE = .nfcOnly
-//                }.frame(width: 150)
-//                PrimaryButton(title: "test flow ekyc"){
-//                    Data.FLOW_API = "ekyc"
-//                    Data.FLOW_TYPE = .ekyc
-//                }.frame(width: 150)
-//                PrimaryButton(title: "test flow nfc_ekyc"){
-//                    Data.FLOW_API = "nfc_ekyc"
-//                    Data.FLOW_TYPE = .nfcEkyc
-//                }.frame(width: 150)
-//                
-//                NavigationLink(destination: HomeView()){
-//                    Text("Go to Home")
-//                }.foregroundColor(.red)
-//            }
-//        }.padding().toast(isShowing: $showToast, message: toastMessage)
-//    }
-//}
-//
-//#Preview {
-//    ContentView()
-//}
 import SwiftUI
 import CmcEkycSDK
 
 struct ContentView: View {
     // "nfc_only" "ekyc" "nfc_ekyc"
-    
-    @State private var selectedFlow: String? = nil // Để lưu lựa chọn
+    @State private var selectedFlow: String? = nil
     @State private var showToast: Bool = false
     @State private var toastMessage: String = ""
     @State private var isClicked: Bool = false

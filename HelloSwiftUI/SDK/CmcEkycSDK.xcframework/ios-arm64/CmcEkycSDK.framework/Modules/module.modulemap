@@ -1,0 +1,6 @@
+framework module CmcEkycSDK {
+  umbrella header "CmcEkycSDK.h"
+  export *
+
+  module * { export * }
+}
