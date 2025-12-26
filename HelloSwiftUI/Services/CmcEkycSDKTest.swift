@@ -36,13 +36,11 @@ final class CmcEkycSDKTest {
             mrz: nil,
             faceData: nil,
             onResult: { result in
-                print("eKYC result:", result?.nfcResult?.name ?? "null")
-                guard let nfcResult = result?.nfcResult else { return }
-                print("eKYC result:", result?.nfcResult?.name ?? "null")
-                guard let nfcResult = result?.nfcResult else { return }
-                
+                print("eKYC result name:", result?.nfcResult?.name ?? "null")
+                print("eKYC result decision:", result?.decision ?? "null")
                 // Hiển thị pop-up với decision
                 DispatchQueue.main.async {
+                    print("Show decision pop-up: \(result?.decision ?? "No decision available")")
                     let alert = UIAlertController(
                         title: "eKYC Decision",
                         message: result?.decision ?? "No decision available",
@@ -51,6 +49,7 @@ final class CmcEkycSDKTest {
                     
                     // Thêm hành động khi nhấn OK
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+                        guard let nfcResult = result?.nfcResult else { return }
                         // Sau khi nhấn OK, chuyển sang màn EkycNfcResultView
                         let view = EkycNfcResultView(nfcResult: nfcResult)
                         let hostingVC = UIHostingController(
@@ -65,6 +64,7 @@ final class CmcEkycSDKTest {
                     // Hiển thị pop-up
                     viewController.present(alert, animated: true)
                 }
+                guard let nfcResult = result?.nfcResult else { return }
                 DispatchQueue.main.async {
                     let view = EkycNfcResultView(nfcResult: nfcResult)
                     
@@ -78,59 +78,59 @@ final class CmcEkycSDKTest {
                     viewController.present(hostingVC, animated: true)
                 }
             },
-            onEvent: { event in
-                print("eKYC event:", event.rawValue)
-            },
-            onShowLoading: {
-                print("Show loading")
-//                DispatchQueue.main.async {
-//                    // Tạo UIAlertController
-//                    let alert = UIAlertController(
-//                        title: "Loading",
-//                        message: "Please wait, loading data...",
-//                        preferredStyle: .alert
-//                    )
-//                    
-//                    // Tạo UIActivityIndicatorView để hiển thị spinner
-//                    let loadingIndicator = UIActivityIndicatorView(style: .medium)
-//                    loadingIndicator.translatesAutoresizingMaskIntoConstraints = false
-//                    loadingIndicator.startAnimating()  // Bắt đầu quay spinner
-//                    
-//                    // Thêm spinner vào UIAlertController's view
-//                    alert.view.addSubview(loadingIndicator)
-//                    
-//                    // Đảm bảo spinner được căn giữa trong UIAlertController
-//                    NSLayoutConstraint.activate([
-//                        loadingIndicator.centerXAnchor.constraint(equalTo: alert.view.centerXAnchor),
-//                        loadingIndicator.topAnchor.constraint(equalTo: alert.view.topAnchor, constant: 30)
-//                    ])
-//                    
-//                    // Hiển thị UIAlertController
-//                    if let viewController = UIApplication.topViewController() {
-//                        viewController.present(alert, animated: true, completion: nil)
-//                        
-//                        // Cố định thời gian 3 giây, sau đó dismiss alert (ẩn spinner)
-//                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { // Sau 3 giây
-//                            alert.dismiss(animated: true, completion: {
-//                                print("Loading finished and alert dismissed.")
-//                            })
-//                        }
-//                    } else {
-//                        print("Error: Unable to find the top view controller.")
-//                    }
-//                }
-            },
-
-            onHideLoading: {
-                print("Hide loading")
-//                DispatchQueue.main.async {
-//                    // Kiểm tra nếu UIAlertController đang được hiển thị
-//                    if let presentedVC = viewController.presentedViewController as? UIAlertController {
-//                        // Nếu có, ẩn UIAlertController
-//                        presentedVC.dismiss(animated: true, completion: nil)
-//                    }
-//                }
-            },
+//            onEvent: { event in
+//                print("eKYC event:", event.rawValue)
+//            },
+//            onShowLoading: {
+//                print("Show loading")
+////                DispatchQueue.main.async {
+////                    // Tạo UIAlertController
+////                    let alert = UIAlertController(
+////                        title: "Loading",
+////                        message: "Please wait, loading data...",
+////                        preferredStyle: .alert
+////                    )
+////                    
+////                    // Tạo UIActivityIndicatorView để hiển thị spinner
+////                    let loadingIndicator = UIActivityIndicatorView(style: .medium)
+////                    loadingIndicator.translatesAutoresizingMaskIntoConstraints = false
+////                    loadingIndicator.startAnimating()  // Bắt đầu quay spinner
+////                    
+////                    // Thêm spinner vào UIAlertController's view
+////                    alert.view.addSubview(loadingIndicator)
+////                    
+////                    // Đảm bảo spinner được căn giữa trong UIAlertController
+////                    NSLayoutConstraint.activate([
+////                        loadingIndicator.centerXAnchor.constraint(equalTo: alert.view.centerXAnchor),
+////                        loadingIndicator.topAnchor.constraint(equalTo: alert.view.topAnchor, constant: 30)
+////                    ])
+////                    
+////                    // Hiển thị UIAlertController
+////                    if let viewController = UIApplication.topViewController() {
+////                        viewController.present(alert, animated: true, completion: nil)
+////                        
+////                        // Cố định thời gian 3 giây, sau đó dismiss alert (ẩn spinner)
+////                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { // Sau 3 giây
+////                            alert.dismiss(animated: true, completion: {
+////                                print("Loading finished and alert dismissed.")
+////                            })
+////                        }
+////                    } else {
+////                        print("Error: Unable to find the top view controller.")
+////                    }
+////                }
+//            },
+//
+//            onHideLoading: {
+//                print("Hide loading")
+////                DispatchQueue.main.async {
+////                    // Kiểm tra nếu UIAlertController đang được hiển thị
+////                    if let presentedVC = viewController.presentedViewController as? UIAlertController {
+////                        // Nếu có, ẩn UIAlertController
+////                        presentedVC.dismiss(animated: true, completion: nil)
+////                    }
+////                }
+//            },
             onShowError: { message, vc in
                 print("Error:", message ?? "")
                 DispatchQueue.main.async {
