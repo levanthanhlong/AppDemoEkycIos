@@ -23,14 +23,14 @@ struct HomeView: View {
                 
                 // Nút reset session
                 PrimaryButton(title: "Reset Session") {
-                    Data.session = ""
+                    DataUtils.SESSION = ""
                     
                     ApiServices.shared.getToken { result in
                         switch result {
                         case .success(let session):
                             print("✅ Lấy Session thành công")
                             print("Session:", session)
-                            print("Saved Session:", Data.session)
+                            print("Saved Session:", DataUtils.SESSION)
                             toastMessage = "✅ Lấy Session thành công"
                             isStartingEkyc = false
                             showToast = true

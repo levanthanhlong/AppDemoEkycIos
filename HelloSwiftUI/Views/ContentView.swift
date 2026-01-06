@@ -8,6 +8,9 @@ import SwiftUI
 import CmcEkycSDK
 
 struct ContentView: View {
+    
+    @EnvironmentObject var appState: AppState
+    
     // "nfc_only" "ekyc" "nfc_ekyc"
     @State private var selectedFlow: String? = nil
     @State private var showToast: Bool = false
@@ -17,6 +20,19 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 30) {
+                
+                HStack {
+                    Spacer()
+                    
+                                Button {
+                                    appState.logout()
+                                } label: {
+                                    Label("Logout", systemImage: "rectangle.portrait.and.arrow.right")
+                                        .foregroundColor(.red)
+                                }
+                            }
+                .padding(.top, 40)
+                
                 Text("Option flow:")
                     .font(.title)
                     .fontWeight(.bold)
@@ -63,8 +79,8 @@ struct ContentView: View {
                         selectedFlow = nil
                     }
                     // Cập nhật Data theo lựa chọn
-                    Data.FLOW_API = flow
-                    Data.FLOW_TYPE = flow == "nfc_only" ? .nfcOnly : (flow == "ekyc" ? .ekyc : .nfcEkyc)
+                    DataUtils.FLOW_API = flow
+                    DataUtils.FLOW_TYPE = flow == "nfc_only" ? .nfcOnly : (flow == "ekyc" ? .ekyc : .nfcEkyc)
                 }
             ))
             .toggleStyle(SwitchToggleStyle(tint: .blue))

@@ -9,11 +9,17 @@ import SwiftUI
 
 @main
 struct HelloSwiftUIApp: App {
+    @StateObject private var appState = AppState()
     var body: some Scene {
         WindowGroup {
-            NavigationStack{
-                ContentView()
-            }
+                    NavigationStack {
+                        if appState.isLoggedIn {
+                            ContentView()
+                        } else {
+                            LoginView(appState: appState)
+                        }
+                    }
+                    .environmentObject(appState)
         }
     }
 }

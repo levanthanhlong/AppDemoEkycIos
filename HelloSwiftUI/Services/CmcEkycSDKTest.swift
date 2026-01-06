@@ -15,9 +15,12 @@ import UIKit
 final class CmcEkycSDKTest {
     
     static func startEkyc(from viewController: UIViewController) {
+        
+        let rawDataProcessor = CmcProcessor()
+        
         CmcEkycManager.shared.startEkyc(
             from: viewController,
-            session: Data.session,
+            session: DataUtils.SESSION,
             baseUrl: AppConst.BASE_URL,
             language: "vi",
             mainColor: "#6CB096",
@@ -32,7 +35,7 @@ final class CmcEkycSDKTest {
             livenessVersion: .passive,
             isOnlyShowReasonInResultVC: false,
             cornerRadiusBtn: 10,
-            flowType: Data.FLOW_TYPE,
+            flowType: DataUtils.FLOW_TYPE,
             mrz: nil,
             faceData: nil,
             onResult: { result in
@@ -144,7 +147,7 @@ final class CmcEkycSDKTest {
                 }
             },
             
-            rawDataProcessor: nil,
+            rawDataProcessor: rawDataProcessor,
             errorScanNFCCallback: { error, errorDescription, retry, dismiss in
                 // In ra lỗi NFC vào console
                 print("NFC Error: \(error), Description: \(errorDescription ?? "No description")")
