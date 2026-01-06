@@ -50,14 +50,14 @@
 			);
 			target = 1286A97A2EF25E0E008F7539 /* EkycDemo */;
 		};
-		12C19E4B2EFCED5100416ECC /* Exceptions for "HelloSwiftUI" folder in "HelloSwiftUITests" target */ = {
+		12C2AA462F0D1F2E007E8015 /* Exceptions for "HelloSwiftUI" folder in "HelloSwiftUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				SDK/CmcEkycSDK.xcframework,
 			);
 			target = 1286A98A2EF25E0F008F7539 /* HelloSwiftUITests */;
 		};
-		12C19E4C2EFCED5100416ECC /* Exceptions for "HelloSwiftUI" folder in "HelloSwiftUIUITests" target */ = {
+		12C2AA472F0D1F2E007E8015 /* Exceptions for "HelloSwiftUI" folder in "HelloSwiftUIUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				SDK/CmcEkycSDK.xcframework,
@@ -89,8 +89,8 @@
 			exceptions = (
 				12BA44D92EF3B7110037CED0 /* Exceptions for "HelloSwiftUI" folder in "EkycDemo" target */,
 				120A52272EF93B3500BC24F4 /* Exceptions for "HelloSwiftUI" folder in "Embed Frameworks" phase from "EkycDemo" target */,
-				12C19E4B2EFCED5100416ECC /* Exceptions for "HelloSwiftUI" folder in "HelloSwiftUITests" target */,
-				12C19E4C2EFCED5100416ECC /* Exceptions for "HelloSwiftUI" folder in "HelloSwiftUIUITests" target */,
+				12C2AA462F0D1F2E007E8015 /* Exceptions for "HelloSwiftUI" folder in "HelloSwiftUITests" target */,
+				12C2AA472F0D1F2E007E8015 /* Exceptions for "HelloSwiftUI" folder in "HelloSwiftUIUITests" target */,
 			);
 			path = HelloSwiftUI;
 			sourceTree = "<group>";

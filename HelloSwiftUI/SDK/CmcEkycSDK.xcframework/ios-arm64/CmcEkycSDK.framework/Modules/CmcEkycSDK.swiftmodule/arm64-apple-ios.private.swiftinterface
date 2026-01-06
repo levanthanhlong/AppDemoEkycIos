@@ -5,6 +5,7 @@
 import Foundation
 import KalapaSDK
 import Swift
+import SwiftUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -16,6 +17,8 @@ import _SwiftConcurrencyShims
   public var rawValue: Swift.Int {
     get
   }
+}
+extension Swift.String : Swift.Error {
 }
 @objc public enum CmcEkycEvent : Swift.Int {
   case sessionTerminated
@@ -42,6 +45,21 @@ import _SwiftConcurrencyShims
   case passive
   case semiActive
   case active
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum CmcScanNFCError : Swift.Int {
+  case ERROR_NFC_INFO_NOT_MATCH = 51
+  case ERROR_FACE_NOT_MATCH = 21
+  case ERROR_NFC_INVALID = 400
+  case ERROR_NFC_TIMEOUT = 401
+  case ERROR_NA = -1
+  public var code: Swift.Int {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -156,21 +174,6 @@ import _SwiftConcurrencyShims
   @objc public init(province: Swift.String?, district: Swift.String?, ward: Swift.String?, unknown: Swift.String?, rawData: [Swift.String : Any])
   @objc deinit
 }
-@objc public enum CmcScanNFCError : Swift.Int {
-  case ERROR_NFC_INFO_NOT_MATCH = 51
-  case ERROR_FACE_NOT_MATCH = 21
-  case ERROR_NFC_INVALID = 400
-  case ERROR_NFC_TIMEOUT = 401
-  case ERROR_NA = -1
-  public var code: Swift.Int {
-    get
-  }
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 @objc @objcMembers final public class CmcEkycResult : ObjectiveC.NSObject {
   @objc final public let session: Swift.String?
   @objc final public let decision: Swift.String?
@@ -190,11 +193,11 @@ import _SwiftConcurrencyShims
   @objc public init(rawData: [Swift.String : Any], mrz: Swift.String?)
   @objc deinit
 }
-@objc public protocol CmcRawDataProcessor : KalapaSDK.KLPRawDataProcessor {
+public protocol CmcRawDataProcessor : ObjectiveC.NSObject, KalapaSDK.KLPRawDataProcessor {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class CmcEkycManager : ObjectiveC.NSObject {
   @objc public static let shared: CmcEkycSDK.CmcEkycManager
-  final public func startEkyc(from viewController: UIKit.UIViewController, session: Swift.String, baseUrl: Swift.String, language: Swift.String = "vi", mainColor: Swift.String = "#6CB096", btnTextColor: Swift.String = "#FFFFFF", backgroundColor: Swift.String = "#FFFFFF", isAnimatedBtn: Swift.Bool = true, isShowResultScreen: Swift.Bool = true, customerLanguage: Swift.String? = nil, scanNFCTimeout: Swift.Int?, livenessTimeout: Swift.Int?, enableQRCode: Swift.Bool = false, livenessVersion: CmcEkycSDK.CmcEkycLivenessVersion? = nil, isOnlyShowReasonInResultVC: Swift.Bool?, cornerRadiusBtn: CoreFoundation.CGFloat = 10, flowType: CmcEkycSDK.CmcEkycFlowType = .ekyc, mrz: Swift.String? = nil, faceData: Swift.String? = nil, onResult: ((CmcEkycSDK.CmcEkycResult?) -> Swift.Void)? = nil, onEvent: ((CmcEkycSDK.CmcEkycEvent) -> Swift.Void)? = nil, onShowLoading: (() -> Swift.Void)? = nil, onHideLoading: (() -> Swift.Void)? = nil, onShowError: ((Swift.String?, UIKit.UIViewController) -> Swift.Void)? = nil, rawDataProcessor: (any CmcEkycSDK.CmcRawDataProcessor)? = nil, errorScanNFCCallback: ((CmcEkycSDK.CmcScanNFCError, Swift.String?, (() -> Swift.Void)?, (() -> Swift.Void)?) -> Swift.Void)?)
+  final public func startEkyc(from viewController: UIKit.UIViewController, sessionCA: Swift.String, tokenCA: Swift.String, baseUrlCA: Swift.String, session: Swift.String, tokenCAKLP: Swift.String, token: Swift.String, baseUrl: Swift.String, language: Swift.String = "vi", mainColor: Swift.String = "#6CB096", btnTextColor: Swift.String = "#FFFFFF", backgroundColor: Swift.String = "#FFFFFF", isAnimatedBtn: Swift.Bool = true, isShowResultScreen: Swift.Bool = true, customerLanguage: Swift.String? = nil, scanNFCTimeout: Swift.Int?, livenessTimeout: Swift.Int?, enableQRCode: Swift.Bool = false, livenessVersion: CmcEkycSDK.CmcEkycLivenessVersion? = nil, isOnlyShowReasonInResultVC: Swift.Bool?, cornerRadiusBtn: CoreFoundation.CGFloat = 10, flowType: CmcEkycSDK.CmcEkycFlowType = .ekyc, mrz: Swift.String? = nil, faceData: Swift.String? = nil, onResult: ((CmcEkycSDK.CmcEkycResult?) -> Swift.Void)? = nil, onEvent: ((CmcEkycSDK.CmcEkycEvent) -> Swift.Void)? = nil, onShowLoading: (() -> Swift.Void)? = nil, onHideLoading: (() -> Swift.Void)? = nil, onShowError: ((Swift.String?, UIKit.UIViewController) -> Swift.Void)? = nil, rawDataProcessor: (any CmcEkycSDK.CmcRawDataProcessor)? = nil, errorScanNFCCallback: ((CmcEkycSDK.CmcScanNFCError, Swift.String?, (() -> Swift.Void)?, (() -> Swift.Void)?) -> Swift.Void)?)
   @objc deinit
 }
 extension CmcEkycSDK.CmcEkycEvent : Swift.Equatable {}

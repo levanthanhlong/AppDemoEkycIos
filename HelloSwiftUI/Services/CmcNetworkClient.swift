@@ -24,7 +24,6 @@ final class CmcNetworkClient {
         sessionId: String,
         token: String
     ) throws -> JSON {
-
         guard let url = URL(string: url) else {
             throw "Invalid URL"
         }
@@ -33,10 +32,6 @@ final class CmcNetworkClient {
                 withJSONObject: jsonBody,
                 options: [.prettyPrinted]
             )
-
-            if let jsonString = String(data: data, encoding: .utf8) {
-                print("📦 jsonBody:\n\(jsonString)")
-        }
         guard
             let sod = jsonBody["sod"],
             let dg1 = jsonBody["dg1"],
@@ -120,13 +115,12 @@ final class CmcNetworkClient {
                 options: [.prettyPrinted]
             )
 
-            if let jsonString = String(data: data, encoding: .utf8) {
-                print("📦 jsonBody:\n\(jsonString)")
-        }
+
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue(sessionId, forHTTPHeaderField: "X-EKYC-Session-Id")
+        request.setValue(sessionId, forHTTPHeaderField: "x-ekyc-session-id")
         request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         request.httpBody = try JSONSerialization.data(withJSONObject: jsonBody)
         request.timeoutInterval = 30
@@ -469,6 +463,6 @@ extension Data {
     }
 }
 
-extension String: Error {}
+//extension String: Error {}
 
 typealias JSON = [String: Any]

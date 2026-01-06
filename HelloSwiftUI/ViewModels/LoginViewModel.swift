@@ -49,7 +49,9 @@ final class LoginViewModel: ObservableObject {
                     password: password
                 )
                 DataUtils.TOKEN_CA = data.token
-                print("✅ Login success:", data.user.username)
+                print("✅ Login success TOKEN_CA:", DataUtils.TOKEN_CA)
+               
+                
                 do {
                     let sessionId = try await ApiServices.shared.initEkycSession(
                         clientTransactionId: generateClientTransactionId()

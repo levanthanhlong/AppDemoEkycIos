@@ -14,10 +14,10 @@
             filePath = "HelloSwiftUI/Services/CmcNetworkClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
-            landmarkName = "CmcNetworkClient"
-            landmarkType = "3">
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "processNfcAndValidate(jsonNfc:baseUrl:sessionId:token:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -30,8 +30,8 @@
             filePath = "HelloSwiftUI/Services/CmcNetworkClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
             landmarkName = "processNfcAndValidate(jsonNfc:baseUrl:sessionId:token:)"
             landmarkType = "7">
          </BreakpointContent>
