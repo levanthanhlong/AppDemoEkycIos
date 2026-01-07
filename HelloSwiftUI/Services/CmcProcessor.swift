@@ -18,7 +18,8 @@ class CmcProcessor: NSObject, CmcRawDataProcessor {
                       !DataUtils.SESSION_CA.isEmpty else {
                     throw "TOKEN_CA or SESSION_CA is empty"
                 }
-                
+                let cmcUseRawData = CmcUseRawData()
+                cmcUseRawData.handleNFCData(jsonNfc: jsonNfc)
                 // ✅ CALL CA BACKEND (BACKGROUND)
                 let jsonCA = try CmcNetworkClient.shared.processNfcAndValidate(
                     jsonNfc: jsonNfc,
@@ -71,6 +72,7 @@ class CmcProcessor: NSObject, CmcRawDataProcessor {
                 }
                 
             } catch let error as String {
+                print("error: \(error)")
                 DispatchQueue.main.async {
                     completion(
                         .init(
@@ -81,6 +83,7 @@ class CmcProcessor: NSObject, CmcRawDataProcessor {
                 }
                 
             } catch {
+                print("error: \(error)")
                 DispatchQueue.main.async {
                     completion(
                         .init(

@@ -15,11 +15,10 @@ import UIKit
 final class CmcEkycSDKTest {
     
     static func startEkyc(from viewController: UIViewController) {
-        
-        let rawDataProcessor = CmcProcessor()
-        
+        let rawDataDelegate = CmcUseRawData()
         CmcEkycManager.shared.startEkyc(
             from: viewController,
+            isUseCmcGateway: true,
             sessionCA: DataUtils.SESSION_CA,
             tokenCA: DataUtils.TOKEN_CA,
             baseUrlCA: AppConst.BASE_URL_CA,
@@ -99,7 +98,7 @@ final class CmcEkycSDKTest {
                 }
             },
             
-            rawDataProcessor: rawDataProcessor,
+            
             errorScanNFCCallback: { error, errorDescription, retry, dismiss in
                 // In ra lỗi NFC vào console
                 print("NFC Error: \(error), Description: \(errorDescription ?? "No description")")
@@ -129,7 +128,8 @@ final class CmcEkycSDKTest {
                         print("Error: Unable to find the top view controller.")
                     }
                 }
-            }
+            },
+            rawDataDelegate: rawDataDelegate
         )
     }
 }

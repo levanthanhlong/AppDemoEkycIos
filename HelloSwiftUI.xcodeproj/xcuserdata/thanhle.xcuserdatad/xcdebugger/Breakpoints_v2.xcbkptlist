@@ -14,8 +14,8 @@
             filePath = "HelloSwiftUI/Services/CmcNetworkClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
+            startingLineNumber = "219"
+            endingLineNumber = "219"
             landmarkName = "processNfcAndValidate(jsonNfc:baseUrl:sessionId:token:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "HelloSwiftUI/Services/CmcNetworkClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "processNfcAndValidate(jsonNfc:baseUrl:sessionId:token:)"
             landmarkType = "7">
          </BreakpointContent>

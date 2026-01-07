@@ -18,8 +18,6 @@ import _SwiftConcurrencyShims
     get
   }
 }
-extension Swift.String : Swift.Error {
-}
 @objc public enum CmcEkycEvent : Swift.Int {
   case sessionTerminated
   case sessionExpired
@@ -65,6 +63,11 @@ extension Swift.String : Swift.Error {
   public var rawValue: Swift.Int {
     get
   }
+}
+public protocol CmcRawDataDelegate : AnyObject {
+  func handleNFCData(jsonNfc: [Swift.String : Any])
+  func handleLivenessData(faceImageBase64String: Swift.String, variant: Swift.String)
+  func handleCaptureData(isFront: Swift.Bool, idCardImageBase64String: Swift.String)
 }
 @objc @objcMembers final public class CmcEkycDecisionDetail : ObjectiveC.NSObject {
   @objc final public let code: Swift.String?
@@ -195,9 +198,12 @@ extension Swift.String : Swift.Error {
 }
 public protocol CmcRawDataProcessor : ObjectiveC.NSObject, KalapaSDK.KLPRawDataProcessor {
 }
+extension Swift.String : Swift.Error {
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class CmcEkycManager : ObjectiveC.NSObject {
   @objc public static let shared: CmcEkycSDK.CmcEkycManager
-  final public func startEkyc(from viewController: UIKit.UIViewController, sessionCA: Swift.String, tokenCA: Swift.String, baseUrlCA: Swift.String, session: Swift.String, tokenCAKLP: Swift.String, token: Swift.String, baseUrl: Swift.String, language: Swift.String = "vi", mainColor: Swift.String = "#6CB096", btnTextColor: Swift.String = "#FFFFFF", backgroundColor: Swift.String = "#FFFFFF", isAnimatedBtn: Swift.Bool = true, isShowResultScreen: Swift.Bool = true, customerLanguage: Swift.String? = nil, scanNFCTimeout: Swift.Int?, livenessTimeout: Swift.Int?, enableQRCode: Swift.Bool = false, livenessVersion: CmcEkycSDK.CmcEkycLivenessVersion? = nil, isOnlyShowReasonInResultVC: Swift.Bool?, cornerRadiusBtn: CoreFoundation.CGFloat = 10, flowType: CmcEkycSDK.CmcEkycFlowType = .ekyc, mrz: Swift.String? = nil, faceData: Swift.String? = nil, onResult: ((CmcEkycSDK.CmcEkycResult?) -> Swift.Void)? = nil, onEvent: ((CmcEkycSDK.CmcEkycEvent) -> Swift.Void)? = nil, onShowLoading: (() -> Swift.Void)? = nil, onHideLoading: (() -> Swift.Void)? = nil, onShowError: ((Swift.String?, UIKit.UIViewController) -> Swift.Void)? = nil, rawDataProcessor: (any CmcEkycSDK.CmcRawDataProcessor)? = nil, errorScanNFCCallback: ((CmcEkycSDK.CmcScanNFCError, Swift.String?, (() -> Swift.Void)?, (() -> Swift.Void)?) -> Swift.Void)?)
+  final public var rawDelegateHolder: (any CmcEkycSDK.CmcRawDataDelegate)?
+  final public func startEkyc(from viewController: UIKit.UIViewController, isUseCmcGateway: Swift.Bool? = true, sessionCA: Swift.String, tokenCA: Swift.String, baseUrlCA: Swift.String, session: Swift.String, tokenCAKLP: Swift.String, token: Swift.String, baseUrl: Swift.String, language: Swift.String = "vi", mainColor: Swift.String = "#6CB096", btnTextColor: Swift.String = "#FFFFFF", backgroundColor: Swift.String = "#FFFFFF", isAnimatedBtn: Swift.Bool = true, isShowResultScreen: Swift.Bool = true, customerLanguage: Swift.String? = nil, scanNFCTimeout: Swift.Int?, livenessTimeout: Swift.Int?, enableQRCode: Swift.Bool = false, livenessVersion: CmcEkycSDK.CmcEkycLivenessVersion? = nil, isOnlyShowReasonInResultVC: Swift.Bool?, cornerRadiusBtn: CoreFoundation.CGFloat = 10, flowType: CmcEkycSDK.CmcEkycFlowType = .ekyc, mrz: Swift.String? = nil, faceData: Swift.String? = nil, onResult: ((CmcEkycSDK.CmcEkycResult?) -> Swift.Void)? = nil, onEvent: ((CmcEkycSDK.CmcEkycEvent) -> Swift.Void)? = nil, onShowLoading: (() -> Swift.Void)? = nil, onHideLoading: (() -> Swift.Void)? = nil, onShowError: ((Swift.String?, UIKit.UIViewController) -> Swift.Void)? = nil, errorScanNFCCallback: ((CmcEkycSDK.CmcScanNFCError, Swift.String?, (() -> Swift.Void)?, (() -> Swift.Void)?) -> Swift.Void)?, rawDataDelegate: (any CmcEkycSDK.CmcRawDataDelegate)? = nil)
   @objc deinit
 }
 extension CmcEkycSDK.CmcEkycEvent : Swift.Equatable {}

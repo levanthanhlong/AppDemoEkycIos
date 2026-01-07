@@ -82,10 +82,22 @@ final class CmcNetworkClient {
             print("POST \(url) -> code=\(http.statusCode)")
 
             guard (200...299).contains(http.statusCode) else {
-                let body = String(data: data, encoding: .utf8) ?? ""
-                result = .failure("HTTP \(http.statusCode): \(body)")
+                if let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+                   let errors = json["errors"] as? [[String: Any]],
+                   let message = errors.first?["message"] as? String {
+                    
+                    print("error message:", message)
+                    result = .failure(message)
+                    
+                } else {
+                    // fallback nếu parse lỗi
+                    let body = String(data: data, encoding: .utf8) ?? ""
+                    print("raw error:", body)
+                    result = .failure("HTTP \(http.statusCode)")
+                }
                 return
             }
+
 
             guard let json = try? JSONSerialization.jsonObject(with: data) as? JSON else {
                 result = .failure("Invalid JSON")
@@ -149,8 +161,19 @@ final class CmcNetworkClient {
             print("POST \(url) -> code=\(http.statusCode)")
 
             guard (200...299).contains(http.statusCode) else {
-                let body = String(data: data, encoding: .utf8) ?? ""
-                result = .failure("HTTP \(http.statusCode): \(body)")
+                if let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+                   let errors = json["errors"] as? [[String: Any]],
+                   let message = errors.first?["message"] as? String {
+                    
+                    print("error message:", message)
+                    result = .failure(message)
+                    
+                } else {
+                    // fallback nếu parse lỗi
+                    let body = String(data: data, encoding: .utf8) ?? ""
+                    print("raw error:", body)
+                    result = .failure("HTTP \(http.statusCode)")
+                }
                 return
             }
 
