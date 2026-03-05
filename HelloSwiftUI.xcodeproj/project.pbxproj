@@ -34,6 +34,16 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		124BD8712F19CF4200A5B64F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -43,20 +53,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		12AAC7C12F0E5EA20049F62E /* Exceptions for "HelloSwiftUI" folder in "HelloSwiftUITests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				SDK/CmcEkycSDK.xcframework,
-			);
-			target = 1286A98A2EF25E0F008F7539 /* HelloSwiftUITests */;
-		};
-		12AAC7C22F0E5EA20049F62E /* Exceptions for "HelloSwiftUI" folder in "HelloSwiftUIUITests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				SDK/CmcEkycSDK.xcframework,
-			);
-			target = 1286A9942EF25E0F008F7539 /* HelloSwiftUIUITests */;
-		};
 		12BA44D92EF3B7110037CED0 /* Exceptions for "HelloSwiftUI" folder in "EkycDemo" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -89,8 +85,6 @@
 			exceptions = (
 				12BA44D92EF3B7110037CED0 /* Exceptions for "HelloSwiftUI" folder in "EkycDemo" target */,
 				120A52272EF93B3500BC24F4 /* Exceptions for "HelloSwiftUI" folder in "Embed Frameworks" phase from "EkycDemo" target */,
-				12AAC7C12F0E5EA20049F62E /* Exceptions for "HelloSwiftUI" folder in "HelloSwiftUITests" target */,
-				12AAC7C22F0E5EA20049F62E /* Exceptions for "HelloSwiftUI" folder in "HelloSwiftUIUITests" target */,
 			);
 			path = HelloSwiftUI;
 			sourceTree = "<group>";
@@ -216,6 +210,7 @@
 				1286A9912EF25E0F008F7539 /* Sources */,
 				1286A9922EF25E0F008F7539 /* Frameworks */,
 				1286A9932EF25E0F008F7539 /* Resources */,
+				124BD8712F19CF4200A5B64F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

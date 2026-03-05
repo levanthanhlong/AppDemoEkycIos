@@ -10,21 +10,19 @@ import SwiftUI
 import CmcEkycSDK
 import UIKit
 
-
-
 final class CmcEkycSDKTest {
     
     static func startEkyc(from viewController: UIViewController) {
         let rawDataDelegate = CmcUseRawData()
         CmcEkycManager.shared.startEkyc(
             from: viewController,
-            isUseCmcGateway: true,
+            isUseCmcGateway: AppConst.IS_USE_CMC_GATEWAY,
             sessionCA: DataUtils.SESSION_CA,
             tokenCA: DataUtils.TOKEN_CA,
             baseUrlCA: AppConst.BASE_URL_CA,
+            ekycSessionId: DataUtils.ekycSessionId,
             session: DataUtils.SESSION,
             tokenCAKLP: DataUtils.TOKEN_KLP,
-            token: AppConst.TOKEN,
             baseUrl: AppConst.BASE_URL,
             language: "vi",
             mainColor: "#6CB096",
@@ -42,6 +40,7 @@ final class CmcEkycSDKTest {
             flowType: DataUtils.FLOW_TYPE,
             mrz: nil,
             faceData: nil,
+            
             onResult: { result in
                 print("eKYC result name:", result?.nfcResult?.name ?? "null")
                 print("eKYC result decision:", result?.decision ?? "null")
@@ -85,6 +84,9 @@ final class CmcEkycSDKTest {
                     viewController.present(hostingVC, animated: true)
                 }
             },
+            onEvent: {event in
+                print("eKYC event:", event.rawValue)
+            },
             onShowError: { message, vc in
                 print("Error:", message ?? "")
                 DispatchQueue.main.async {
@@ -97,7 +99,6 @@ final class CmcEkycSDKTest {
                     vc.present(alert, animated: true)
                 }
             },
-            
             
             errorScanNFCCallback: { error, errorDescription, retry, dismiss in
                 // In ra lỗi NFC vào console

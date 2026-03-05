@@ -23,27 +23,25 @@ struct HomeView: View {
                 
                 // Nút reset session
                 PrimaryButton(title: "Reset Session") {
-                    DataUtils.SESSION = ""
+    //                DataUtils.SESSION = ""
                     
-                    ApiServices.shared.getToken { result in
-                        switch result {
-                        case .success(let session):
-                            print("✅ Lấy Session thành công")
-                            print("Session:", session)
-                            print("Saved Session:", DataUtils.SESSION)
-                            toastMessage = "✅ Lấy Session thành công"
-                            isStartingEkyc = false
-                            showToast = true
-                            
-                        case .failure(let error):
-                            print("❌ Lấy token thất bại", error.localizedDescription)
-                            toastMessage = "❌ Lấy token thất bại"
-                            showToast = true
-                        }
-                    }
-                    
-                    
-                    
+//                    ApiServices.shared.getToken { result in
+//                        switch result {
+//                        case .success(let session):
+//                            print("✅ Lấy Session thành công")
+//                            print("Session:", session)
+//                            print("Saved Session:", DataUtils.SESSION)
+//                            toastMessage = "✅ Lấy Session thành công"
+//                            isStartingEkyc = false
+//                            showToast = true
+//                            
+//                        case .failure(let error):
+//                            print("❌ Lấy token thất bại", error.localizedDescription)
+//                            toastMessage = "❌ Lấy token thất bại"
+//                            showToast = true
+//                        }
+//                    }
+                    isStartingEkyc = false
                 }
                 .buttonStyle(CustomButtonStyle())
                 

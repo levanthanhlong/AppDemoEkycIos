@@ -9,11 +9,11 @@ import CmcEkycSDK
 
 class DataUtils {
     static var shared: Data = Data()
-    static var SESSION: String = ""
-    static var TOKEN = "5bb42ea331ee010001a0b7d7438s78vt8g62oul6943cra01xf28u48n"
-    static var TOKEN_KLP: String = ""
-    static var TOKEN_CA: String = ""
-    static var SESSION_CA: String = ""
+    static var ekycSessionId = "" // Lấy từ https://csign.cmcuat.cloud/api/ekyc/init
+    static var SESSION: String = "" // Lấy từ api: https://csign.cmcuat.cloud/api/ekyc/kalapa/init-session
+    static var TOKEN_KLP: String = "" // lấy từ api: https://csign.cmcuat.cloud/api/ekyc/kalapa/init-session
+    static var TOKEN_CA: String = "" // Lấy từ api: https://csign.cmcuat.cloud/api/auth/login
+    static var SESSION_CA: String = "" // Lấy từ api: https://csign.cmcuat.cloud/api/ekyc/kalapa/init-session
     static var FLOW_TYPE: CmcEkycFlowType = .nfcEkyc
     static var FLOW_API = "nfc_ekyc" // "nfc_only" "ekyc" "nfc_ekyc"
 }

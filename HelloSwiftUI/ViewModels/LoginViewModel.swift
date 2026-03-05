@@ -53,11 +53,11 @@ final class LoginViewModel: ObservableObject {
                
                 
                 do {
-                    let sessionId = try await ApiServices.shared.initEkycSession(
+                    let ekycSessionId = try await ApiServices.shared.initEkycSession(
                         clientTransactionId: generateClientTransactionId()
                     )
-                    DataUtils.SESSION_CA = sessionId
-                    print("SESSION_CA:", sessionId)
+                    DataUtils.ekycSessionId = ekycSessionId
+                    print("✅ ekycSessionId:", ekycSessionId)
 
                 } catch {
                     print("❌ Init EKYC error:", error.localizedDescription)

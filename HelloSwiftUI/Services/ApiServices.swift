@@ -14,7 +14,7 @@ final class ApiServices {
     private init() {}
 
     // MARK: - Constants
-    private let baseURL = "\(AppConst.BASE_URL)/api/auth/get-token"
+    //private let baseURL = "\(AppConst.BASE_URL)/api/auth/get-token"
     private let authToken = AppConst.TOKEN
     private let authToken_CA = DataUtils.TOKEN_CA
     private let baseURL_CA = "\(AppConst.BASE_URL_CA)/api/ekyc/kalapa/init-session"
@@ -92,54 +92,7 @@ final class ApiServices {
         let message: String
     }
 
-
-    // MARK: - API - Get session klp
-    func getToken(completion: @escaping (Result<String, Error>) -> Void) {
-        guard let url = URL(string: baseURL) else { return }
-
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.setValue("Bearer \(authToken)", forHTTPHeaderField: "Authorization")
-
-        let body = GetTokenRequest(
-            ekycSessionId: DataUtils.SESSION_CA,
-            verify_check: false,
-            fraud_check: true,
-            accept_flash: false,
-            strict_quality_check: true,
-            scan_full_information: true,
-            allow_sdk_full_results: true,
-            flow: DataUtils.FLOW_API
-        )
-
-        do {
-            request.httpBody = try JSONEncoder().encode(body)
-        } catch {
-            completion(.failure(error))
-            return
-        }
-
-        URLSession.shared.dataTask(with: request) { data, _, error in
-
-            if let error = error {
-                completion(.failure(error))
-                return
-            }
-
-            guard let data = data else { return }
-
-            do {
-                let response = try JSONDecoder().decode(GetTokenResponse.self, from: data)
-                // ✅ Gán session theo yêu cầu
-                DataUtils.SESSION = response.short_token
-                completion(.success(response.short_token))
-            } catch {
-                completion(.failure(error))
-            }
-
-        }.resume()
-    }
+    
     
     // MARK: - API - Get session klp
     func getTokenSessionCA(completion: @escaping (Result<String, Error>) -> Void) {
@@ -151,7 +104,7 @@ final class ApiServices {
         request.setValue("Bearer \(DataUtils.TOKEN_CA)", forHTTPHeaderField: "Authorization")
 
         let body = GetTokenRequest(
-            ekycSessionId: DataUtils.SESSION_CA,
+            ekycSessionId: DataUtils.ekycSessionId,
             verify_check: false,
             fraud_check: true,
             accept_flash: false,
@@ -207,6 +160,83 @@ final class ApiServices {
                 let response = try JSONDecoder().decode(GetTokenResponse.self, from: data)
                 // ✅ Gán session theo yêu cầu
                 DataUtils.TOKEN_KLP = response.token
+                DataUtils.SESSION_CA = response.short_token
+                print("SESSION_CA: \(DataUtils.SESSION_CA)")
+                completion(.success(response.token))
+            } catch {
+                completion(.failure(error))
+            }
+
+        }.resume()
+    }
+    
+    // MARK: - API - Get session klp
+    func getSessionKLP(completion: @escaping (Result<String, Error>) -> Void) {
+        guard let url = URL(string: baseURL_CA) else { return }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Bearer \(DataUtils.TOKEN_CA)", forHTTPHeaderField: "Authorization")
+
+        let body = GetTokenRequest(
+            ekycSessionId: DataUtils.ekycSessionId,
+            verify_check: false,
+            fraud_check: true,
+            accept_flash: false,
+            strict_quality_check: true,
+            scan_full_information: true,
+            allow_sdk_full_results: true,
+            flow: DataUtils.FLOW_API
+        )
+
+        do {
+            request.httpBody = try JSONEncoder().encode(body)
+
+            // ✅ In request
+            print("========== REQUEST ==========")
+            print("URL: \(url.absoluteString)")
+            print("Method: \(request.httpMethod ?? "")")
+            print("Headers: \(request.allHTTPHeaderFields ?? [:])")
+            print("Authorization: \(DataUtils.TOKEN_CA)")
+            if let bodyData = request.httpBody,
+               let bodyString = String(data: bodyData, encoding: .utf8) {
+                print("Body: \(bodyString)")
+            }
+            print("=============================")
+
+        } catch {
+            completion(.failure(error))
+            return
+        }
+
+        URLSession.shared.dataTask(with: request) { data, response, error in
+
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+
+            // ✅ In response HTTP
+            if let httpResponse = response as? HTTPURLResponse {
+                print("========== RESPONSE ==========")
+                print("Status Code: \(httpResponse.statusCode)")
+                print("Headers: \(httpResponse.allHeaderFields)")
+            }
+
+            guard let data = data else { return }
+
+            // ✅ In raw response JSON
+            if let rawString = String(data: data, encoding: .utf8) {
+                print("Raw Body: \(rawString)")
+                print("=============================")
+            }
+
+            do {
+                let response = try JSONDecoder().decode(GetTokenResponse.self, from: data)
+                // ✅ Gán session theo yêu cầu
+                DataUtils.SESSION = response.short_token
+                print("Session: \(DataUtils.SESSION)")
                 completion(.success(response.token))
             } catch {
                 completion(.failure(error))
@@ -304,18 +334,30 @@ final class ApiServices {
             let result = try JSONDecoder().decode(InitEkycResponse.self, from: data)
 
             // ✅ GÁN SESSION
-            DataUtils.SESSION_CA = result.ekycSessionId
+            DataUtils.ekycSessionId = result.ekycSessionId
             
-            print("✅ EKYC SESSION:", result.ekycSessionId)
-            ApiServices.shared.getTokenSessionCA { result in
+            print("✅ EKYC ekycSessionId:", result.ekycSessionId)
+            ApiServices.shared.getSessionKLP { result in
                 switch result {
-                case .success(let token_klp):
-                    print("✅ Lấy Session token CA thành công")
-                    print("Session Token:", token_klp)
+                case .success(let session_klp):
+                    print("✅ Lấy Session KLP thành công")
+                    print("Session :", session_klp)
                 case .failure(let error):
-                    print("❌ Lấy token thất bại", error.localizedDescription)
+                    print("❌ Lấy session_klp thất bại", error.localizedDescription)
                 }
             }
+            if (AppConst.IS_USE_CMC_GATEWAY){
+                ApiServices.shared.getTokenSessionCA { result in
+                    switch result {
+                    case .success(let token_klp):
+                        print("✅ Lấy Session token CA thành công")
+                        print("Session Token:", token_klp)
+                    case .failure(let error):
+                        print("❌ Lấy token thất bại", error.localizedDescription)
+                    }
+                }
+            }
+
             return result.ekycSessionId
         }
 }
