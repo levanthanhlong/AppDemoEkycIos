@@ -12,14 +12,26 @@ struct HelloSwiftUIApp: App {
     @StateObject private var appState = AppState()
     var body: some Scene {
         WindowGroup {
-                    NavigationStack {
-                        if appState.isLoggedIn {
-                            ContentView()
-                        } else {
-                            LoginView(appState: appState)
-                        }
+            if #available(iOS 16.0, *) {
+                NavigationStack {
+                    if appState.isLoggedIn {
+                        ContentView()
+                    } else {
+                        LoginView(appState: appState)
                     }
-                    .environmentObject(appState)
+                }
+                .environmentObject(appState)
+            } else {
+                NavigationView {
+                    if appState.isLoggedIn {
+                        ContentView()
+                    } else {
+                        LoginView(appState: appState)
+                    }
+                }
+                .navigationViewStyle(.stack)
+                .environmentObject(appState)
+            }
         }
     }
 }

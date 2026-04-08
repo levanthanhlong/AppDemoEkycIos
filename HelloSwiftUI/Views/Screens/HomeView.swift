@@ -23,24 +23,26 @@ struct HomeView: View {
                 
                 // Nút reset session
                 PrimaryButton(title: "Reset Session") {
-    //                DataUtils.SESSION = ""
-                    
-//                    ApiServices.shared.getToken { result in
-//                        switch result {
-//                        case .success(let session):
-//                            print("✅ Lấy Session thành công")
-//                            print("Session:", session)
-//                            print("Saved Session:", DataUtils.SESSION)
-//                            toastMessage = "✅ Lấy Session thành công"
-//                            isStartingEkyc = false
-//                            showToast = true
-//                            
-//                        case .failure(let error):
-//                            print("❌ Lấy token thất bại", error.localizedDescription)
-//                            toastMessage = "❌ Lấy token thất bại"
-//                            showToast = true
-//                        }
-//                    }
+                    ApiServices.shared.getSessionKLP { result in
+                        switch result {
+                        case .success(let session_klp):
+                            print("✅ Lấy Session KLP thành công")
+                            print("Session :", session_klp)
+                        case .failure(let error):
+                            print("❌ Lấy session_klp thất bại", error.localizedDescription)
+                        }
+                    }
+                    if (AppConst.IS_USE_CMC_GATEWAY){
+                        ApiServices.shared.getTokenSessionCA { result in
+                            switch result {
+                            case .success(let token_klp):
+                                print("✅ Lấy Session token CA thành công")
+                                print("Session Token:", token_klp)
+                            case .failure(let error):
+                                print("❌ Lấy token thất bại", error.localizedDescription)
+                            }
+                        }
+                    }
                     isStartingEkyc = false
                 }
                 .buttonStyle(CustomButtonStyle())
@@ -63,7 +65,7 @@ struct HomeView: View {
                         }
                     }
                 }
-
+                
                 .buttonStyle(CustomButtonStyle())
                 
             }

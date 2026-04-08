@@ -81,6 +81,8 @@ struct ContentView: View {
                     // Cập nhật Data theo lựa chọn
                     DataUtils.FLOW_API = flow
                     DataUtils.FLOW_TYPE = flow == "nfc_only" ? .nfcOnly : (flow == "ekyc" ? .ekyc : .nfcEkyc)
+                    print("FLOW_API: \(DataUtils.FLOW_API)")
+                    print("Flow_typr: \(DataUtils.FLOW_TYPE)")
                 }
             ))
             .toggleStyle(SwitchToggleStyle(tint: .blue))

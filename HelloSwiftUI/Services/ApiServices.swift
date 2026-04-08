@@ -32,17 +32,33 @@ final class ApiServices {
     }
 
     // MARK: - Response Model
+//    private struct GetTokenResponse: Codable {
+//        let token: String
+//        let short_token: String
+//        let client_id: String
+//        let flow: String
+//        let document_type: String
+//        let verify_check: Bool
+//        let fraud_check: Bool
+//        let accept_flash: Bool
+//        let strict_quality_check: Bool
+//        let scan_full_information: Bool
+//    }
+  
     private struct GetTokenResponse: Codable {
         let token: String
         let short_token: String
         let client_id: String
         let flow: String
         let document_type: String
-        let verify_check: Bool
-        let fraud_check: Bool
-        let accept_flash: Bool
-        let strict_quality_check: Bool
-        let scan_full_information: Bool
+
+        // Thêm các trường mặc định cho những trường không có trong response
+        let verify_check: Bool?
+        let fraud_check: Bool?
+        let accept_flash: Bool?
+        let strict_quality_check: Bool?
+        let scan_full_information: Bool?
+        let allow_sdk_full_results: Bool?
     }
     
     // MARK: - Request
@@ -103,6 +119,9 @@ final class ApiServices {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("Bearer \(DataUtils.TOKEN_CA)", forHTTPHeaderField: "Authorization")
 
+        print("flow api getTokenSessionCA: \(DataUtils.FLOW_API)")
+        print("flow type getTokenSessionCA: \(DataUtils.FLOW_TYPE)")
+        
         let body = GetTokenRequest(
             ekycSessionId: DataUtils.ekycSessionId,
             verify_check: false,
@@ -179,6 +198,8 @@ final class ApiServices {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("Bearer \(DataUtils.TOKEN_CA)", forHTTPHeaderField: "Authorization")
 
+
+        
         let body = GetTokenRequest(
             ekycSessionId: DataUtils.ekycSessionId,
             verify_check: false,
@@ -189,6 +210,9 @@ final class ApiServices {
             allow_sdk_full_results: true,
             flow: DataUtils.FLOW_API
         )
+        
+        print("flow api getSessionKLP: \(DataUtils.FLOW_API)")
+        print("flow type getSessionKLP: \(DataUtils.FLOW_TYPE)")
 
         do {
             request.httpBody = try JSONEncoder().encode(body)
@@ -337,26 +361,26 @@ final class ApiServices {
             DataUtils.ekycSessionId = result.ekycSessionId
             
             print("✅ EKYC ekycSessionId:", result.ekycSessionId)
-            ApiServices.shared.getSessionKLP { result in
-                switch result {
-                case .success(let session_klp):
-                    print("✅ Lấy Session KLP thành công")
-                    print("Session :", session_klp)
-                case .failure(let error):
-                    print("❌ Lấy session_klp thất bại", error.localizedDescription)
-                }
-            }
-            if (AppConst.IS_USE_CMC_GATEWAY){
-                ApiServices.shared.getTokenSessionCA { result in
-                    switch result {
-                    case .success(let token_klp):
-                        print("✅ Lấy Session token CA thành công")
-                        print("Session Token:", token_klp)
-                    case .failure(let error):
-                        print("❌ Lấy token thất bại", error.localizedDescription)
-                    }
-                }
-            }
+//            ApiServices.shared.getSessionKLP { result in
+//                switch result {
+//                case .success(let session_klp):
+//                    print("✅ Lấy Session KLP thành công")
+//                    print("Session :", session_klp)
+//                case .failure(let error):
+//                    print("❌ Lấy session_klp thất bại", error.localizedDescription)
+//                }
+//            }
+//            if (AppConst.IS_USE_CMC_GATEWAY){
+//                ApiServices.shared.getTokenSessionCA { result in
+//                    switch result {
+//                    case .success(let token_klp):
+//                        print("✅ Lấy Session token CA thành công")
+//                        print("Session Token:", token_klp)
+//                    case .failure(let error):
+//                        print("❌ Lấy token thất bại", error.localizedDescription)
+//                    }
+//                }
+//            }
 
             return result.ekycSessionId
         }
