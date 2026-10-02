@@ -33,7 +33,7 @@ final class CmcEkycSDKTest {
             customerLanguage: nil,
             scanNFCTimeout: 30,
             livenessTimeout: 30,
-            enableQRCode: false,
+            enableQRCode: true,
             livenessVersion: .passive,
             isOnlyShowReasonInResultVC: false,
             cornerRadiusBtn: 10,

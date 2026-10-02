@@ -70,7 +70,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		12BA44D92EF3B7110037CED0 /* Exceptions for "HelloSwiftUI" folder in "EkycDemo" target */ = {
+		129EDE9C306CAD77003D6C79 /* Exceptions for "HelloSwiftUI" folder in "EkycDemo" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -80,7 +80,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		120A52272EF93B3500BC24F4 /* Exceptions for "HelloSwiftUI" folder in "Embed Frameworks" phase from "EkycDemo" target */ = {
+		129EDE9F306CADA5003D6C79 /* Exceptions for "HelloSwiftUI" folder in "Embed Frameworks" phase from "EkycDemo" target */ = {
 			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
 			attributesByRelativePath = {
 				SDK/CmcEkycSDK.xcframework = (CodeSignOnCopy, RemoveHeadersOnCopy, );
@@ -100,8 +100,8 @@
 		1286A97D2EF25E0E008F7539 /* HelloSwiftUI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				12BA44D92EF3B7110037CED0 /* Exceptions for "HelloSwiftUI" folder in "EkycDemo" target */,
-				120A52272EF93B3500BC24F4 /* Exceptions for "HelloSwiftUI" folder in "Embed Frameworks" phase from "EkycDemo" target */,
+				129EDE9C306CAD77003D6C79 /* Exceptions for "HelloSwiftUI" folder in "EkycDemo" target */,
+				129EDE9F306CADA5003D6C79 /* Exceptions for "HelloSwiftUI" folder in "Embed Frameworks" phase from "EkycDemo" target */,
 			);
 			path = HelloSwiftUI;
 			sourceTree = "<group>";
@@ -665,7 +665,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -700,7 +700,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

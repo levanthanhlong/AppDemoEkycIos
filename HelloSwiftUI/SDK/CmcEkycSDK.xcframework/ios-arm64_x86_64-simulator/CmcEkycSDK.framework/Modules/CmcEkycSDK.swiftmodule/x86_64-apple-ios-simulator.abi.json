@@ -22,6 +22,64 @@
         "moduleName": "CmcEkycSDK"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CmcEkycSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CmcEkycSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CmcEkycSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "KalapaSDK",
+        "printedName": "KalapaSDK",
+        "declKind": "Import",
+        "moduleName": "CmcEkycSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CmcEkycSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "KalapaSDK",
+        "printedName": "KalapaSDK",
+        "declKind": "Import",
+        "moduleName": "CmcEkycSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KalapaSDK",
+        "printedName": "KalapaSDK",
+        "declKind": "Import",
+        "moduleName": "CmcEkycSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "CmcEkycEnumResult",
         "printedName": "CmcEkycEnumResult",
@@ -1471,6 +1529,318 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CmcEkycBackResult",
+        "printedName": "CmcEkycBackResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "rawData",
+            "printedName": "rawData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult(py)rawData",
+            "mangledName": "$s10CmcEkycSDK0aB10BackResultC7rawDataSDySSypGvp",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult(im)rawData",
+                "mangledName": "$s10CmcEkycSDK0aB10BackResultC7rawDataSDySSypGvg",
+                "moduleName": "CmcEkycSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mrz",
+            "printedName": "mrz",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult(py)mrz",
+            "mangledName": "$s10CmcEkycSDK0aB10BackResultC3mrzSSSgvp",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult(im)mrz",
+                "mangledName": "$s10CmcEkycSDK0aB10BackResultC3mrzSSSgvg",
+                "moduleName": "CmcEkycSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawData:mrz:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CmcEkycBackResult",
+                "printedName": "CmcEkycSDK.CmcEkycBackResult",
+                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult(im)initWithRawData:mrz:",
+            "mangledName": "$s10CmcEkycSDK0aB10BackResultC7rawData3mrzACSDySSypG_SSSgtcfc",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CmcEkycBackResult",
+                "printedName": "CmcEkycSDK.CmcEkycBackResult",
+                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult(im)init",
+            "mangledName": "$s10CmcEkycSDK0aB10BackResultCACycfc",
+            "moduleName": "CmcEkycSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult",
+        "mangledName": "$s10CmcEkycSDK0aB10BackResultC",
+        "moduleName": "CmcEkycSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -9447,328 +9817,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "CmcEkycBackResult",
-        "printedName": "CmcEkycBackResult",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "rawData",
-            "printedName": "rawData",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult(py)rawData",
-            "mangledName": "$s10CmcEkycSDK0aB10BackResultC7rawDataSDySSypGvp",
-            "moduleName": "CmcEkycSDK",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Any]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult(im)rawData",
-                "mangledName": "$s10CmcEkycSDK0aB10BackResultC7rawDataSDySSypGvg",
-                "moduleName": "CmcEkycSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "mrz",
-            "printedName": "mrz",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult(py)mrz",
-            "mangledName": "$s10CmcEkycSDK0aB10BackResultC3mrzSSSgvp",
-            "moduleName": "CmcEkycSDK",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult(im)mrz",
-                "mangledName": "$s10CmcEkycSDK0aB10BackResultC3mrzSSSgvg",
-                "moduleName": "CmcEkycSDK",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawData:mrz:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CmcEkycBackResult",
-                "printedName": "CmcEkycSDK.CmcEkycBackResult",
-                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult(im)initWithRawData:mrz:",
-            "mangledName": "$s10CmcEkycSDK0aB10BackResultC7rawData3mrzACSDySSypG_SSSgtcfc",
-            "moduleName": "CmcEkycSDK",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CmcEkycBackResult",
-                "printedName": "CmcEkycSDK.CmcEkycBackResult",
-                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult(im)init",
-            "mangledName": "$s10CmcEkycSDK0aB10BackResultCACycfc",
-            "moduleName": "CmcEkycSDK",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@CmcEkycSDK@objc(cs)CmcEkycBackResult",
-        "mangledName": "$s10CmcEkycSDK0aB10BackResultC",
-        "moduleName": "CmcEkycSDK",
-        "declAttributes": [
-          "Final",
-          "AccessControl",
-          "ObjCMembers",
-          "RawDocComment",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "CmcEkycSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "Import",
         "name": "KalapaSDK",
         "printedName": "KalapaSDK",
@@ -9888,6 +9936,98 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processQRCodeData",
+            "printedName": "processQRCodeData(payload:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KalapaSDK.KLPConfig.Result) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "KalapaSDK.KLPConfig.Result",
+                    "usr": "s:9KalapaSDK9KLPConfigC6ResultC"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CmcEkycSDK0A15RawDataDelegateP013processQRCodeE07payload10completionySS_y06KalapaC09KLPConfigC6ResultCctF",
+            "mangledName": "$s10CmcEkycSDK0A15RawDataDelegateP013processQRCodeE07payload10completionySS_y06KalapaC09KLPConfigC6ResultCctF",
+            "moduleName": "CmcEkycSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : CmcEkycSDK.CmcRawDataDelegate>",
+            "sugared_genericSig": "<Self where Self : CmcEkycSDK.CmcRawDataDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processQRCodeData",
+            "printedName": "processQRCodeData(payload:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KalapaSDK.KLPConfig.Result) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "KalapaSDK.KLPConfig.Result",
+                    "usr": "s:9KalapaSDK9KLPConfigC6ResultC"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CmcEkycSDK0A15RawDataDelegatePAAE013processQRCodeE07payload10completionySS_y06KalapaC09KLPConfigC6ResultCctF",
+            "mangledName": "$s10CmcEkycSDK0A15RawDataDelegatePAAE013processQRCodeE07payload10completionySS_y06KalapaC09KLPConfigC6ResultCctF",
+            "moduleName": "CmcEkycSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : CmcEkycSDK.CmcRawDataDelegate>",
+            "sugared_genericSig": "<Self where Self : CmcEkycSDK.CmcRawDataDelegate>",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -9897,8 +10037,7 @@
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -9971,30 +10110,6 @@
             "mangledName": "$s9KalapaSDK19KLPRawDataProcessorP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "CmcEkycSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KalapaSDK",
-        "printedName": "KalapaSDK",
-        "declKind": "Import",
-        "moduleName": "CmcEkycSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "CmcEkycSDK"
       },
       {
         "kind": "TypeDecl",
@@ -10928,6 +11043,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_ExpressibleByBuiltinUnicodeScalarLiteral",
             "printedName": "_ExpressibleByBuiltinUnicodeScalarLiteral",
             "usr": "s:s41_ExpressibleByBuiltinUnicodeScalarLiteralP",
@@ -11411,238 +11533,259 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Data\/DataUtils.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Network\/KalapaApi.swift",
+      "kind": "Dictionary",
+      "offset": 3856,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Network\/KalapaApi.swift",
+      "kind": "StringLiteral",
+      "offset": 3889,
+      "length": 7,
+      "value": "\"image\""
+    },
+    {
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Network\/KalapaApi.swift",
+      "kind": "StringLiteral",
+      "offset": 3951,
+      "length": 12,
+      "value": "\"image\/jpeg\""
+    },
+    {
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Utils\/CmcQRCodeParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 320,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Utils\/CmcQRCodeParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 361,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Utils\/CmcQRCodeParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 407,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Utils\/DataUtils.swift",
       "kind": "StringLiteral",
       "offset": 167,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Data\/DataUtils.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Utils\/DataUtils.swift",
       "kind": "StringLiteral",
       "offset": 209,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Data\/DataUtils.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Utils\/DataUtils.swift",
       "kind": "StringLiteral",
       "offset": 235,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Data\/DataUtils.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Utils\/DataUtils.swift",
       "kind": "StringLiteral",
       "offset": 272,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Data\/DataUtils.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Utils\/DataUtils.swift",
       "kind": "StringLiteral",
       "offset": 313,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Data\/DataUtils.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Utils\/DataUtils.swift",
       "kind": "StringLiteral",
       "offset": 352,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Data\/DataUtils.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Utils\/DataUtils.swift",
       "kind": "StringLiteral",
       "offset": 389,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Data\/DataUtils.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Utils\/DataUtils.swift",
       "kind": "StringLiteral",
       "offset": 429,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Data\/DataUtils.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Utils\/DataUtils.swift",
       "kind": "BooleanLiteral",
       "offset": 519,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycEnumResult.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycEnumResult.swift",
       "kind": "IntegerLiteral",
       "offset": 159,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycEvent.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 227,
       "length": 14,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycEvent.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 281,
       "length": 15,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycFlowType.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycFlowType.swift",
       "kind": "IntegerLiteral",
       "offset": 211,
       "length": 7,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycFlowType.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycFlowType.swift",
       "kind": "IntegerLiteral",
       "offset": 251,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycFlowType.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycFlowType.swift",
       "kind": "IntegerLiteral",
       "offset": 291,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycLivenessVersion.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycLivenessVersion.swift",
       "kind": "IntegerLiteral",
       "offset": 236,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycLivenessVersion.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcEkycLivenessVersion.swift",
       "kind": "IntegerLiteral",
       "offset": 281,
       "length": 6,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcScanNFCError.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcScanNFCError.swift",
       "kind": "IntegerLiteral",
       "offset": 164,
       "length": 2,
       "value": "51"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcScanNFCError.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcScanNFCError.swift",
       "kind": "IntegerLiteral",
       "offset": 199,
       "length": 2,
       "value": "21"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcScanNFCError.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcScanNFCError.swift",
       "kind": "IntegerLiteral",
       "offset": 231,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcScanNFCError.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcScanNFCError.swift",
       "kind": "IntegerLiteral",
       "offset": 264,
       "length": 3,
       "value": "401"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcScanNFCError.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Enums\/CmcScanNFCError.swift",
       "kind": "IntegerLiteral",
       "offset": 288,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Services\/RawProcessorApi.swift",
-      "kind": "Dictionary",
-      "offset": 7779,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Services\/RawProcessorApi.swift",
-      "kind": "StringLiteral",
-      "offset": 7812,
-      "length": 7,
-      "value": "\"image\""
-    },
-    {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/Services\/RawProcessorApi.swift",
-      "kind": "StringLiteral",
-      "offset": 7874,
-      "length": 12,
-      "value": "\"image\/jpeg\""
-    },
-    {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 388,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "StringLiteral",
       "offset": 614,
       "length": 4,
       "value": "\"vi\""
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "StringLiteral",
       "offset": 648,
       "length": 9,
       "value": "\"#6CB096\""
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "StringLiteral",
       "offset": 690,
       "length": 9,
       "value": "\"#FFFFFF\""
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "StringLiteral",
       "offset": 735,
       "length": 9,
       "value": "\"#FFFFFF\""
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 776,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 817,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "BooleanLiteral",
       "offset": 954,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/thanhle\/Documents\/cmc-code\/gitcmc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "IntegerLiteral",
       "offset": 1095,
       "length": 2,
