@@ -6,6 +6,7 @@
 import Foundation
 import KalapaSDK
 import Swift
+import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -225,6 +226,20 @@ extension Swift.String : Swift.Error {
   #endif
   @objc deinit
 }
+@objc @objcMembers final public class CmcFaceCompareResult : ObjectiveC.NSObject {
+  @objc final public let isMatched: Swift.Bool
+  @objc final public let isCompleted: Swift.Bool
+  @objc final public let matchingScore: Swift.Double
+  @objc final public let requestId: Swift.String?
+  @objc final public let httpStatusCode: Swift.Int
+  @objc final public let errorCode: Swift.Int
+  @objc final public let errorMessage: Swift.String?
+  @objc final public let rawData: [Swift.String : Any]
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(isMatched: Swift.Bool, isCompleted: Swift.Bool, matchingScore: Swift.Double, requestId: Swift.String?, httpStatusCode: Swift.Int, errorCode: Swift.Int, errorMessage: Swift.String?, rawData: [Swift.String : Any])
+  #endif
+  @objc deinit
+}
 public protocol CmcRawDataDelegate : AnyObject {
   func handleNFCData(jsonNfc: [Swift.String : Any])
   func handleLivenessData(faceImageBase64String: Swift.String, variant: Swift.String)
@@ -241,6 +256,9 @@ public protocol CmcRawDataProcessor : ObjectiveC.NSObject, KalapaSDK.KLPRawDataP
   final public var rawDelegateHolder: (any CmcEkycSDK.CmcRawDataDelegate)?
   #if compiler(>=5.3) && $NonescapableTypes
   final public func startEkyc(from viewController: UIKit.UIViewController, isUseCmcGateway: Swift.Bool? = true, sessionCA: Swift.String?, tokenCA: Swift.String?, baseUrlCA: Swift.String?, ekycSessionId: Swift.String?, session: Swift.String, tokenCAKLP: Swift.String?, baseUrl: Swift.String, language: Swift.String = "vi", mainColor: Swift.String = "#6CB096", btnTextColor: Swift.String = "#FFFFFF", backgroundColor: Swift.String = "#FFFFFF", isAnimatedBtn: Swift.Bool = true, isShowResultScreen: Swift.Bool = true, customerLanguage: Swift.String? = nil, scanNFCTimeout: Swift.Int?, livenessTimeout: Swift.Int?, enableQRCode: Swift.Bool = false, livenessVersion: CmcEkycSDK.CmcEkycLivenessVersion? = nil, isOnlyShowReasonInResultVC: Swift.Bool?, cornerRadiusBtn: CoreFoundation.CGFloat = 10, flowType: CmcEkycSDK.CmcEkycFlowType = .ekyc, mrz: Swift.String? = nil, faceData: Swift.String? = nil, onResult: ((CmcEkycSDK.CmcEkycResult?) -> Swift.Void)? = nil, onEvent: ((CmcEkycSDK.CmcEkycEvent) -> Swift.Void)? = nil, onShowLoading: (() -> Swift.Void)? = nil, onHideLoading: (() -> Swift.Void)? = nil, onShowError: ((Swift.String?, UIKit.UIViewController) -> Swift.Void)? = nil, errorScanNFCCallback: ((CmcEkycSDK.CmcScanNFCError, Swift.String?, (() -> Swift.Void)?, (() -> Swift.Void)?) -> Swift.Void)?, rawDataDelegate: (any CmcEkycSDK.CmcRawDataDelegate)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func startFaceCompare(from viewController: UIKit.UIViewController, baseUrl: Swift.String, token: Swift.String, ekycSessionId: Swift.String, storedPortraitBase64: Swift.String, language: Swift.String = "vi", mainColor: Swift.String = "#6CB096", btnTextColor: Swift.String = "#FFFFFF", backgroundColor: Swift.String = "#FFFFFF", isAnimatedBtn: Swift.Bool = true, cornerRadiusBtn: CoreFoundation.CGFloat = 10, livenessTimeout: Swift.Int? = nil, onResult: ((CmcEkycSDK.CmcFaceCompareResult?) -> Swift.Void)? = nil, onShowError: ((Swift.String?, UIKit.UIViewController) -> Swift.Void)? = nil, onShowLoading: (() -> Swift.Void)? = nil, onHideLoading: (() -> Swift.Void)? = nil)
   #endif
   @objc deinit
 }

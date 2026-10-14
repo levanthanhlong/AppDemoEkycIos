@@ -4,12 +4,15 @@
 ////
 ////  Created by ThanhLe on 17/12/25.
 ////
+import PhotosUI
 import SwiftUI
 
 struct HomeView: View {
     @State private var isStartingEkyc = true
     @State private var toastMessage = ""
     @State private var showToast = false
+    @State private var selectedPortraitItem: PhotosPickerItem?
+    @State private var storedPortraitBase64: String?
     
     var body: some View {
         NavigationStack {
@@ -67,10 +70,44 @@ struct HomeView: View {
                 }
                 
                 .buttonStyle(CustomButtonStyle())
-                
+
+                // Face Compare: chọn ảnh chân dung đã có, rồi so khớp với ảnh liveness
+                PhotosPicker(selection: $selectedPortraitItem, matching: .images) {
+                    Text(storedPortraitBase64 == nil ? "Chọn ảnh chân dung" : "Đã chọn ảnh chân dung ✓")
+                        .foregroundColor(.blue)
+                        .frame(maxWidth: .infinity, minHeight: 48)
+                        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.blue))
+                }
+                .onChange(of: selectedPortraitItem) { item in
+                    loadPortrait(from: item)
+                }
+
+                PrimaryButton(
+                    title: "Start Face Compare",
+                    isDisabled: storedPortraitBase64 == nil
+                ) {
+                    guard let storedPortraitBase64,
+                          let vc = UIApplication.topViewController() else { return }
+                    CmcFaceCompareTest.startFaceCompare(from: vc, storedPortraitBase64: storedPortraitBase64)
+                }
+
             }
             .padding()
             .toast(isShowing: $showToast, message: toastMessage, duration: 3.0)
+        }
+    }
+
+    /// Đọc ảnh đã chọn, nén JPEG rồi chuyển sang Base64
+    private func loadPortrait(from item: PhotosPickerItem?) {
+        guard let item else { return }
+        Task {
+            guard let data = try? await item.loadTransferable(type: Data.self),
+                  let jpeg = UIImage(data: data)?.jpegData(compressionQuality: 0.9) else {
+                toastMessage = "Không đọc được ảnh"
+                showToast = true
+                return
+            }
+            storedPortraitBase64 = jpeg.base64EncodedString()
         }
     }
 }

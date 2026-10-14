@@ -16,6 +16,23 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CmcEkycSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "KalapaSDK",
+        "printedName": "KalapaSDK",
+        "declKind": "Import",
+        "moduleName": "CmcEkycSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -58,6 +75,16 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "CmcEkycSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "KalapaSDK",
+        "printedName": "KalapaSDK",
+        "declKind": "Import",
+        "moduleName": "CmcEkycSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -9818,6 +9845,694 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CmcEkycSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CmcFaceCompareResult",
+        "printedName": "CmcFaceCompareResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isMatched",
+            "printedName": "isMatched",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(py)isMatched",
+            "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC9isMatchedSbvp",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(im)isMatched",
+                "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC9isMatchedSbvg",
+                "moduleName": "CmcEkycSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isCompleted",
+            "printedName": "isCompleted",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(py)isCompleted",
+            "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC11isCompletedSbvp",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(im)isCompleted",
+                "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC11isCompletedSbvg",
+                "moduleName": "CmcEkycSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "matchingScore",
+            "printedName": "matchingScore",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(py)matchingScore",
+            "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC13matchingScoreSdvp",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(im)matchingScore",
+                "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC13matchingScoreSdvg",
+                "moduleName": "CmcEkycSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "requestId",
+            "printedName": "requestId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(py)requestId",
+            "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC9requestIdSSSgvp",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(im)requestId",
+                "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC9requestIdSSSgvg",
+                "moduleName": "CmcEkycSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "httpStatusCode",
+            "printedName": "httpStatusCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(py)httpStatusCode",
+            "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC14httpStatusCodeSivp",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(im)httpStatusCode",
+                "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC14httpStatusCodeSivg",
+                "moduleName": "CmcEkycSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorCode",
+            "printedName": "errorCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(py)errorCode",
+            "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC9errorCodeSivp",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(im)errorCode",
+                "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC9errorCodeSivg",
+                "moduleName": "CmcEkycSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorMessage",
+            "printedName": "errorMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(py)errorMessage",
+            "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC12errorMessageSSSgvp",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(im)errorMessage",
+                "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC12errorMessageSSSgvg",
+                "moduleName": "CmcEkycSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rawData",
+            "printedName": "rawData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(py)rawData",
+            "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC7rawDataSDySSypGvp",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(im)rawData",
+                "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC7rawDataSDySSypGvg",
+                "moduleName": "CmcEkycSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(isMatched:isCompleted:matchingScore:requestId:httpStatusCode:errorCode:errorMessage:rawData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CmcFaceCompareResult",
+                "printedName": "CmcEkycSDK.CmcFaceCompareResult",
+                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(im)initWithIsMatched:isCompleted:matchingScore:requestId:httpStatusCode:errorCode:errorMessage:rawData:",
+            "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC9isMatched0G9Completed13matchingScore9requestId14httpStatusCode05errorP00Q7Message7rawDataACSb_SbSdSSSgS2iALSDySSypGtcfc",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CmcFaceCompareResult",
+                "printedName": "CmcEkycSDK.CmcFaceCompareResult",
+                "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult(im)init",
+            "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultCACycfc",
+            "moduleName": "CmcEkycSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult",
+        "mangledName": "$s10CmcEkycSDK0A17FaceCompareResultC",
+        "moduleName": "CmcEkycSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "KalapaSDK",
         "printedName": "KalapaSDK",
         "declKind": "Import",
@@ -10851,6 +11566,250 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startFaceCompare",
+            "printedName": "startFaceCompare(from:baseUrl:token:ekycSessionId:storedPortraitBase64:language:mainColor:btnTextColor:backgroundColor:isAnimatedBtn:cornerRadiusBtn:livenessTimeout:onResult:onShowError:onShowLoading:onHideLoading:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((CmcEkycSDK.CmcFaceCompareResult?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CmcEkycSDK.CmcFaceCompareResult?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "CmcEkycSDK.CmcFaceCompareResult?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CmcFaceCompareResult",
+                            "printedName": "CmcEkycSDK.CmcFaceCompareResult",
+                            "usr": "c:@M@CmcEkycSDK@objc(cs)CmcFaceCompareResult"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.String?, UIKit.UIViewController) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String?, UIKit.UIViewController) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String?, UIKit.UIViewController)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIViewController",
+                            "printedName": "UIKit.UIViewController",
+                            "usr": "c:objc(cs)UIViewController"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10CmcEkycSDK0aB7ManagerC16startFaceCompare4from7baseUrl5token13ekycSessionId20storedPortraitBase648language9mainColor07btnTextT0010backgroundT013isAnimatedBtn012cornerRadiusZ015livenessTimeout8onResult11onShowError13onShowLoading13onHideLoadingySo16UIViewControllerC_S8SSb14CoreFoundation7CGFloatVSiSgyAA0afG6ResultCSgcSgySSSg_AVtcSgyycSgA5_tF",
+            "mangledName": "$s10CmcEkycSDK0aB7ManagerC16startFaceCompare4from7baseUrl5token13ekycSessionId20storedPortraitBase648language9mainColor07btnTextT0010backgroundT013isAnimatedBtn012cornerRadiusZ015livenessTimeout8onResult11onShowError13onShowLoading13onHideLoadingySo16UIViewControllerC_S8SSb12CoreGraphics7CGFloatVSiSgyAA0afG6ResultCSgcSgySSSg_AVtcSgyycSgA5_tF",
+            "moduleName": "CmcEkycSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -11554,6 +12513,41 @@
       "value": "\"image\/jpeg\""
     },
     {
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Processors\/CmcFaceCompareProcessor.swift",
+      "kind": "StringLiteral",
+      "offset": 320,
+      "length": 51,
+      "value": "\"Khuôn mặt không khớp, vui lòng thử lại\""
+    },
+    {
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Processors\/CmcFaceCompareProcessor.swift",
+      "kind": "StringLiteral",
+      "offset": 406,
+      "length": 51,
+      "value": "\"Chưa hoàn tất xử lý, vui lòng thử lại\""
+    },
+    {
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Processors\/CmcFaceCompareProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 612,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Processors\/CmcFaceCompareProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 667,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Processors\/CmcFaceCompareProcessor.swift",
+      "kind": "IntegerLiteral",
+      "offset": 701,
+      "length": 3,
+      "value": "200"
+    },
+    {
       "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Internal\/Utils\/CmcQRCodeParser.swift",
       "kind": "IntegerLiteral",
       "offset": 320,
@@ -11788,6 +12782,48 @@
       "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
       "kind": "IntegerLiteral",
       "offset": 1095,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 4328,
+      "length": 4,
+      "value": "\"vi\""
+    },
+    {
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 4362,
+      "length": 9,
+      "value": "\"#6CB096\""
+    },
+    {
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 4404,
+      "length": 9,
+      "value": "\"#FFFFFF\""
+    },
+    {
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 4449,
+      "length": 9,
+      "value": "\"#FFFFFF\""
+    },
+    {
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4490,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/ExternalSSD\/cmc\/ca-git\/ekyc\/ekyc-sdk-ios\/CmcEkycSDK\/CmcEkycSDK\/Public\/CmcEkycSDK.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4531,
       "length": 2,
       "value": "10"
     }

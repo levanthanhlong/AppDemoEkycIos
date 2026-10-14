@@ -10,27 +10,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dV4ZpT4+aTtpdM+XIQPZZLJQO3I=
+		o3Cn8MV9fyOjRaN7d0B+8zSmMNE=
 		</data>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		57EbuA4g91laSJwbjhHaS76A9fg=
+		ZCRc+FfqRMY7oZMvfBtOfnarBSs=
 		</data>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		FLVeQQRsnx857XvNoUd0VecNJTo=
+		3TQ/nVcLijykUTXwUmhAjPHSYDw=
 		</data>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		+IqIsweMVXO/yAdbbLj13u1p5Ys=
+		OMAvscWQ5r9dCId2tch1RVxiIa4=
 		</data>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		FLVeQQRsnx857XvNoUd0VecNJTo=
+		3TQ/nVcLijykUTXwUmhAjPHSYDw=
 		</data>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Gv3mYfh0+4EGJx5GX+DR4E/GJ48=
+		wDYyYwM+GosoS+4KAszJzsnRDEM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,35 +50,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RU6IqkmLWvN+dRzcSj8D6XmsOEVMdZdX3C+po9sZJns=
+			U33dfzshxNkWgkbyUO/78QuMVtZDzeiBGqFX6PXyTwk=
 			</data>
 		</dict>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eXx0zGwEFTtrESMfGcZJVCqfINNZVRnjRbMIPb6XO0Y=
+			PpdTCKMdQwqcuc7oTOTxQsXTIWY4kKmU2l8gE4ncZsg=
 			</data>
 		</dict>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q0FI1U6vkMfrVMzvf0H1NzMv9Kuc0JvtC9SDneH/5IY=
+			vCQC7lw5KMYcriajgsRPSBJ3Y2LNQi3ox63sFBbEzs4=
 			</data>
 		</dict>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eXx0zGwEFTtrESMfGcZJVCqfINNZVRnjRbMIPb6XO0Y=
+			PpdTCKMdQwqcuc7oTOTxQsXTIWY4kKmU2l8gE4ncZsg=
 			</data>
 		</dict>
 		<key>Modules/CmcEkycSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ftNezKFpFuf+dggG8ST2a+kG1u9JpNqem4iD/OKhLNQ=
+			6yCVxs8MGwfLSMReZkdLnJf8yMijU7AuWAGTyRCCjYw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
